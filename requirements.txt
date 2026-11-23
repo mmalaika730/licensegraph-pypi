@@ -1,0 +1,8 @@
+rdflib>=7.0
+owlrl>=7.1
+numpy>=1.26
+networkx>=3.2
+matplotlib>=3.8
+packaging>=24.0
+streamlit>=1.40
+pytest>=8.0
