@@ -1,0 +1,6 @@
+depName,depVersion,licenseId
+mutagen,1.48.1,GPL-2.0-or-later
+pylint,4.1.3,GPL-2.0-or-later
+unidecode,1.4.0,GPL-2.0-or-later
+astroid,4.3.4,LGPL-2.1-or-later
+certifi,2026.10.23,MPL-2.0

@@ -1,0 +1,6 @@
+dependency,licenseId
+mutagen,GPL-2.0-or-later
+pylint,GPL-2.0-or-later
+unidecode,GPL-2.0-or-later
+astroid,LGPL-2.1-or-later
+certifi,MPL-2.0

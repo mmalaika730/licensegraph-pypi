@@ -1,0 +1,22 @@
+licenseId,licenseName,versionsUsing
+MIT,MIT License,66
+BSD-3-Clause,"BSD 3-Clause ""New"" or ""Revised"" License",60
+Apache-2.0,Apache License 2.0,27
+BSD-2-Clause,"BSD 2-Clause ""Simplified"" License",8
+GPL-2.0-or-later,GNU General Public License v2.0 or later,7
+PSF-2.0,Python Software Foundation License 2.0,5
+GPL-3.0-or-later,GNU General Public License v3.0 or later,3
+0BSD,BSD Zero Clause License,2
+CC0-1.0,Creative Commons Zero v1.0 Universal,2
+LGPL-2.1-or-later,GNU Lesser General Public License v2.1 or later,2
+LGPL-3.0-only,GNU Lesser General Public License v3.0 only,2
+MPL-2.0,Mozilla Public License 2.0,2
+Artistic-2.0,Artistic License 2.0,1
+GPL-2.0-only,GNU General Public License v2.0 only,1
+ISC,ISC License,1
+LGPL-2.1,GNU Lesser General Public License v2.1 only,1
+LicenseRef-Public-Domain,LicenseRef-Public-Domain,1
+MIT-0,MIT No Attribution,1
+MIT-CMU,CMU License,1
+ZPL-2.1,Zope Public License 2.1,1
+Zlib,zlib License,1

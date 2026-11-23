@@ -1,0 +1,3 @@
+root,deepDependency,licenseId
+beets/2.14.1,certifi/2026.10.23,MPL-2.0
+scrapy/2.19.0,certifi/2026.10.23,MPL-2.0

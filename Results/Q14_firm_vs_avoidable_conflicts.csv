@@ -1,0 +1,8 @@
+project,verdictLabel,kind,conflicts
+acme-apache-app,Conditional,firm,3
+acme-apache-app,Incompatible,"avoidable (dual license, pick another option)",2
+acme-gpl3-app,Conditional,"avoidable (dual license, pick another option)",1
+acme-gpl3-app,Conditional,firm,2
+acme-mit-app,Conditional,firm,2
+acme-mit-app,Incompatible,firm,3
+acme-proprietary-app,Conditional,firm,3

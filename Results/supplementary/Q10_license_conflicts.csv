@@ -1,0 +1,6 @@
+verdictLabel,depLabel,licenseId,rule,dualLicenseWarning
+Conditional,astroid/4.3.4,LGPL-2.1-or-later,R6,
+Conditional,certifi/2026.10.23,MPL-2.0,R6,
+Incompatible,mutagen/1.48.1,GPL-2.0-or-later,R1,
+Incompatible,pylint/4.1.3,GPL-2.0-or-later,R1,
+Incompatible,unidecode/1.4.0,GPL-2.0-or-later,R1,
