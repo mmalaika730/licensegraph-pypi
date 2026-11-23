@@ -1,0 +1,140 @@
+@prefix lg:   <http://example.org/licensegraph#> .
+@prefix pkg:  <http://example.org/licensegraph/pkg/> .
+@prefix lic:  <http://example.org/licensegraph/license/> .
+@prefix rule: <http://example.org/licensegraph/rule/> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<http://example.org/licensegraph> a owl:Ontology ;
+    rdfs:label "LicenseGraph-PyPI Ontology" ;
+    rdfs:comment "T-Box for open-source license conflict reasoning over Python dependency trees. Dependency and license facts are recorded per package VERSION, as in deps.dev." .
+
+###############################  T-BOX: CLASSES  ###############################
+
+lg:Package        a owl:Class ; rdfs:label "Package" ;
+                  rdfs:comment "A PyPI project by name, independent of version (pkg:requests)." .
+lg:PackageVersion a owl:Class ; rdfs:label "Package version" ;
+                  rdfs:comment "One resolved release of a package. Licenses and dependencies attach here." .
+lg:Project        a owl:Class ; rdfs:label "Project" ; rdfs:subClassOf lg:PackageVersion ;
+                  rdfs:comment "The user's own project, treated as a package version that is audited." .
+lg:License        a owl:Class ; rdfs:label "License" .
+lg:PermissiveLicense      a owl:Class ; rdfs:subClassOf lg:License ; rdfs:label "Permissive license" .
+lg:CopyleftLicense        a owl:Class ; rdfs:subClassOf lg:License ; rdfs:label "Copyleft license" .
+lg:WeakCopyleftLicense    a owl:Class ; rdfs:subClassOf lg:CopyleftLicense ; rdfs:label "Weak copyleft license" .
+lg:StrongCopyleftLicense  a owl:Class ; rdfs:subClassOf lg:CopyleftLicense ; rdfs:label "Strong copyleft license" .
+lg:NetworkCopyleftLicense a owl:Class ; rdfs:subClassOf lg:StrongCopyleftLicense ; rdfs:label "Network copyleft license" .
+lg:ProprietaryLicense     a owl:Class ; rdfs:subClassOf lg:License ; rdfs:label "Proprietary license" .
+lg:PublicDomainLicense    a owl:Class ; rdfs:subClassOf lg:PermissiveLicense ; rdfs:label "Public-domain-like license" .
+lg:UnknownLicense         a owl:Class ; rdfs:subClassOf lg:License ; rdfs:label "Unknown / unrecognised license" .
+lg:CompatibilityRule      a owl:Class ; rdfs:label "Compatibility rule" ;
+                          rdfs:comment "Curated rule: project-license category vs dependency-license category gives a verdict." .
+lg:Verdict                a owl:Class ; rdfs:label "Verdict" .
+lg:Source                 a owl:Class ; rdfs:label "Source" ;
+                          rdfs:comment "A published guide or FAQ that a compatibility rule is based on." .
+lg:LicensePrediction      a owl:Class ; rdfs:label "License prediction" ;
+                          rdfs:comment "Iteration 2: a license suggested by the TransE link-prediction model for a package version. A prediction is NOT a stored or inferred fact; it is never connected with lg:hasLicense." .
+lg:LicenseConflict        a owl:Class ; rdfs:label "License conflict" ;
+                          rdfs:comment "Inferred: a project whose dependency tree contains an incompatible license." .
+
+# Constraints
+lg:PermissiveLicense   owl:disjointWith lg:CopyleftLicense, lg:ProprietaryLicense .
+lg:CopyleftLicense     owl:disjointWith lg:ProprietaryLicense .
+lg:Package             owl:disjointWith lg:License, lg:PackageVersion .
+lg:PackageVersion      owl:disjointWith lg:License .
+lg:LicensePrediction   owl:disjointWith lg:Package, lg:PackageVersion, lg:License, lg:CompatibilityRule .
+
+###############################  T-BOX: OBJECT PROPERTIES  ###############################
+
+lg:hasVersion a owl:ObjectProperty ; rdfs:domain lg:Package ; rdfs:range lg:PackageVersion ;
+              owl:inverseOf lg:versionOf .
+lg:versionOf  a owl:ObjectProperty .
+
+lg:hasLicense a owl:ObjectProperty ; rdfs:domain lg:PackageVersion ; rdfs:range lg:License .
+
+lg:dependsOn  a owl:ObjectProperty, owl:TransitiveProperty ;
+              rdfs:domain lg:PackageVersion ; rdfs:range lg:PackageVersion ;
+              rdfs:comment "Transitive closure of direct dependency; inferred, not stored." ;
+              owl:inverseOf lg:dependencyOf .
+lg:dependencyOf a owl:ObjectProperty .
+
+lg:directlyDependsOn a owl:ObjectProperty ; rdfs:subPropertyOf lg:dependsOn ;
+              rdfs:comment "Stored fact: a direct edge in the deps.dev resolved dependency graph." .
+
+lg:treeContainsLicense a owl:ObjectProperty ; rdfs:domain lg:PackageVersion ; rdfs:range lg:License ;
+              owl:propertyChainAxiom ( lg:dependsOn lg:hasLicense ) ;
+              rdfs:comment "Inferred: a license appearing anywhere below a package version." .
+
+lg:incompatibleWith a owl:ObjectProperty, owl:SymmetricProperty ;
+              rdfs:domain lg:License ; rdfs:range lg:License ;
+              rdfs:comment "License-to-license incompatibility (e.g. GPL-2.0-only with Apache-2.0)." .
+
+# CompatibilityRule structure (category classes used as values: OWL 2 punning)
+lg:projectCategory    a owl:ObjectProperty ; rdfs:domain lg:CompatibilityRule .
+lg:dependencyCategory a owl:ObjectProperty ; rdfs:domain lg:CompatibilityRule .
+lg:verdict            a owl:ObjectProperty ; rdfs:domain lg:CompatibilityRule ; rdfs:range lg:Verdict .
+
+lg:conflictProject    a owl:ObjectProperty ; rdfs:domain lg:LicenseConflict ; rdfs:range lg:Project .
+lg:conflictDependency a owl:ObjectProperty ; rdfs:domain lg:LicenseConflict ; rdfs:range lg:PackageVersion .
+lg:conflictRule       a owl:ObjectProperty ; rdfs:domain lg:LicenseConflict ; rdfs:range lg:CompatibilityRule .
+lg:conflictLicense    a owl:ObjectProperty ; rdfs:domain lg:LicenseConflict ; rdfs:range lg:License ;
+                      rdfs:comment "The dependency license that triggered the conflict." .
+lg:conflictVerdict    a owl:ObjectProperty ; rdfs:domain lg:LicenseConflict ; rdfs:range lg:Verdict ;
+                      rdfs:comment "Incompatible, or Conditional (needs review)." .
+
+# Iteration 2: link-prediction output (kept in kg_reasoning/predictions.ttl, loaded as a separate named graph)
+lg:predictionFor   a owl:ObjectProperty ; rdfs:domain lg:LicensePrediction ; rdfs:range lg:PackageVersion .
+lg:predictedLicense a owl:ObjectProperty ; rdfs:domain lg:LicensePrediction ; rdfs:range lg:License ;
+                   rdfs:comment "Deliberately not a sub-property of lg:hasLicense, so reasoning and the conflict rule never treat a prediction as a fact." .
+
+###############################  T-BOX: DATATYPE PROPERTIES  ###############################
+
+lg:packageName   a owl:DatatypeProperty, owl:FunctionalProperty ; rdfs:range xsd:string ;
+                 rdfs:comment "Name of a package or of the user's project. Deliberately has no rdfs:domain: it is used on Package and on Project, and Package is disjoint from PackageVersion (a domain would make every Project inconsistent)." .
+lg:projectName   a owl:DatatypeProperty, owl:FunctionalProperty ; rdfs:subPropertyOf lg:packageName ;
+                 rdfs:domain lg:Project ; rdfs:range xsd:string ;
+                 rdfs:comment "Name of the user's own project; a subproperty of packageName." .
+lg:licenseSource a owl:DatatypeProperty ; rdfs:domain lg:PackageVersion ; rdfs:range xsd:string ;
+                 rdfs:comment "Where the license value came from: license_expression (SPDX), license_text, classifier, manual_override or none. Classifier values are less reliable (e.g. 'BSD License' does not say 2- or 3-clause)." .
+lg:isDisjunctiveLicense a owl:DatatypeProperty ; rdfs:domain lg:PackageVersion ; rdfs:range xsd:boolean ;
+                 rdfs:comment "True when the declared license is an OR expression (dual licensing): the user may pick ONE option, so a conflict through one option may be avoidable." .
+lg:versionString a owl:DatatypeProperty ; rdfs:domain lg:PackageVersion ; rdfs:range xsd:string .
+lg:isSeedRoot    a owl:DatatypeProperty ; rdfs:domain lg:PackageVersion ; rdfs:range xsd:boolean ;
+                 rdfs:comment "True for the packages the extraction started from (the analysis roots)." .
+lg:declaredLicenseString a owl:DatatypeProperty ; rdfs:domain lg:PackageVersion ; rdfs:range xsd:string ;
+                 rdfs:comment "Raw license value from deps.dev, kept for provenance." .
+lg:hasMultipleDeclaredLicenses a owl:DatatypeProperty ; rdfs:domain lg:PackageVersion ; rdfs:range xsd:boolean ;
+                 rdfs:comment "True when more than one license id was parsed. May be dual licensing (OR) or stacked (AND); check declaredLicenseString." .
+lg:spdxId        a owl:DatatypeProperty, owl:FunctionalProperty ; rdfs:domain lg:License ; rdfs:range xsd:string .
+lg:isOsiApproved a owl:DatatypeProperty ; rdfs:domain lg:License ; rdfs:range xsd:boolean ;
+                 rdfs:comment "From the SPDX License List. Absent for ids not in the list (treat as not confirmed)." .
+lg:isFsfLibre    a owl:DatatypeProperty ; rdfs:domain lg:License ; rdfs:range xsd:boolean ;
+                 rdfs:comment "From the SPDX License List. Only present where SPDX gives a value." .
+lg:ruleStatus    a owl:DatatypeProperty ; rdfs:domain lg:CompatibilityRule ; rdfs:range xsd:string ;
+                 rdfs:comment "'cited' = backed by a published source we read; 'design decision' = our own conservative choice, no source consulted." .
+lg:sourcePublisher a owl:DatatypeProperty ; rdfs:domain lg:Source ; rdfs:range xsd:string .
+lg:sourceUrl       a owl:DatatypeProperty ; rdfs:domain lg:Source ; rdfs:range xsd:anyURI .
+lg:sourceAccessed  a owl:DatatypeProperty ; rdfs:domain lg:Source ; rdfs:range xsd:dateTime .
+
+lg:predictionRank   a owl:DatatypeProperty ; rdfs:domain lg:LicensePrediction ; rdfs:range xsd:integer .
+lg:predictionScore  a owl:DatatypeProperty ; rdfs:domain lg:LicensePrediction ; rdfs:range xsd:decimal ;
+                    rdfs:comment "TransE plausibility score, minus the squared distance ||h + r - t||^2; higher is more plausible. Not a probability." .
+lg:predictionMethod a owl:DatatypeProperty ; rdfs:domain lg:LicensePrediction ; rdfs:range xsd:string .
+lg:predictionStatus a owl:DatatypeProperty ; rdfs:domain lg:LicensePrediction ; rdfs:range xsd:string .
+lg:heldOutLink      a owl:DatatypeProperty ; rdfs:domain lg:LicensePrediction ; rdfs:range xsd:boolean ;
+                    rdfs:comment "True when the true license link was hidden from the model during training (a genuine test prediction)." .
+
+lg:ruleSource    a owl:ObjectProperty ; rdfs:domain lg:CompatibilityRule ; rdfs:range lg:Source ;
+                 rdfs:comment "Published source behind a cited rule (traceable evidence for the explanation)." .
+
+###############################  SCHEMA-LEVEL INDIVIDUALS  ###############################
+# Verdicts
+lg:Compatible   a lg:Verdict ; rdfs:label "Compatible" .
+lg:Incompatible a lg:Verdict ; rdfs:label "Incompatible" .
+lg:Conditional  a lg:Verdict ; rdfs:label "Conditional" .
+
+# Compatibility rules live in compatibility_rules.ttl (generated from Dataset/curated/compatibility_rules.csv).
+
+# License-level incompatibility. Source: Apache Software Foundation, "GPL compatibility": the FSF has never considered the Apache License compatible with GPL version 2.
+lic:GPL-2.0-only lg:incompatibleWith lic:Apache-2.0 .

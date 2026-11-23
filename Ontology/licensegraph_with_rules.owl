@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:lg="http://example.org/licensegraph#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Description rdf:about="http://example.org/licensegraph#predictionScore">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicensePrediction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    <rdfs:comment>TransE plausibility score, minus the squared distance ||h + r - t||^2; higher is more plausible. Not a probability.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R3">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Incompatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Design decision by analogy with R2 (AGPL is a GPL-family license). Verified 2026-11-14: no source read states the combined-work consequences for AGPL. Nuance from the Kemitchell guide: AGPL section 13 is triggered by modification plus remote network interaction; running an unmodified program does not trigger it.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/source/MPL_FAQ">
+    <rdf:type rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:label>MPL 2.0 FAQ</rdfs:label>
+    <lg:sourcePublisher>Mozilla</lg:sourcePublisher>
+    <lg:sourceUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.mozilla.org/en-US/MPL/2.0/FAQ/</lg:sourceUrl>
+    <lg:sourceAccessed rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-04T00:00:00</lg:sourceAccessed>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/source/APACHE_GPL">
+    <rdf:type rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:label>GPL compatibility</rdfs:label>
+    <lg:sourcePublisher>The Apache Software Foundation</lg:sourcePublisher>
+    <lg:sourceUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.apache.org/licenses/GPL-compatibility</lg:sourceUrl>
+    <lg:sourceAccessed rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-04T00:00:00</lg:sourceAccessed>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R23">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Incompatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Design decision by analogy with R22 (AGPL is a GPL-family license). Verified 2026-11-14: no source read states the combined-work consequences for AGPL.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#hasLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#License"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#predictionMethod">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicensePrediction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R11">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Compatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Same reasoning as R10 applied to AGPL projects. No published source consulted for this exact pair.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#UnknownLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:label>Unknown / unrecognised license</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R4">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Incompatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Design decision by analogy with R1 (AGPL is a GPL-family license). Verified 2026-11-14: no source read states the combined-work consequences for AGPL.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#dependsOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:comment>Transitive closure of direct dependency; inferred, not stored.</rdfs:comment>
+    <owl:inverseOf rdf:resource="http://example.org/licensegraph#dependencyOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#predictedLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicensePrediction"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:comment>Deliberately not a sub-property of lg:hasLicense, so reasoning and the conflict rule never treat a prediction as a fact.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#heldOutLink">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicensePrediction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment>True when the true license link was hidden from the model during training (a genuine test prediction).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#predictionRank">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicensePrediction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R24">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Depends on how the proprietary component is linked and licensed. No published source consulted.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R14">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>Same GPLv3/AGPLv3 bridge as R13 in the other direction (Kemitchell guide). GPLv3 only.</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/KEMITCHELL_AGPL"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#LicenseConflict">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>License conflict</rdfs:label>
+    <rdfs:comment>Inferred: a project whose dependency tree contains an incompatible license.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#spdxId">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R22">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Incompatible"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>A GPL project cannot incorporate proprietary code that is not licensed under GPL-compatible terms (combined-work reasoning).</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/FSF_FAQ_POST"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#hasVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#Package"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <owl:inverseOf rdf:resource="http://example.org/licensegraph#versionOf"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R6">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>Same conditions as R5: the weak-copyleft component keeps its own license obligations (library source, license text, relinking), the rest of the project can stay permissive.</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/QT_LGPL"/>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/MPL_FAQ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R8">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Compatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Permissive licenses impose only notice/attribution conditions, so a permissive project can depend on permissive packages. No published source consulted in this iteration.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R19">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Incompatible"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>A project that incorporates strong-copyleft code must be distributed under the GPL, so it cannot remain under a weak-copyleft license.</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/APACHE_GPL"/>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/FSF_FAQ_POST"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R2">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Incompatible"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>Linking statically or dynamically with a GPL module makes a combined work based on it (FSF post), which must then be distributed under the GPL; this is incompatible with a proprietary license.</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/APACHE_GPL"/>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/FSF_FAQ_POST"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R5">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>Allowed under conditions: with dynamic linking the application source may stay proprietary, with static linking it may not (Qt LGPL page); MPL copyleft is file-level and new files are not Modifications (MPL FAQ Q11). The library stays under its own license, and its source and license text must be provided.</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/QT_LGPL"/>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/MPL_FAQ"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R12">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Compatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Permissive dependencies can be used under a weak-copyleft project. No published source consulted in this iteration.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#Source">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Source</rdfs:label>
+    <rdfs:comment>A published guide or FAQ that a compatibility rule is based on.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+    <rdfs:label>LicenseGraph-PyPI Ontology</rdfs:label>
+    <rdfs:comment>T-Box for open-source license conflict reasoning over Python dependency trees. Dependency and license facts are recorded per package VERSION, as in deps.dev.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#sourceUrl">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#declaredLicenseString">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Raw license value from deps.dev, kept for provenance.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R7">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#License"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#UnknownLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>A dependency whose license is unknown, non-standard or not recorded cannot be assessed; manual review is required. No published source consulted; this is a conservative design choice.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#dependencyCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R18">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Compatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Same license family. No published source consulted for exact version combinations.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#PermissiveLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:label>Permissive license</rdfs:label>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#CopyleftLicense"/>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#projectCategory">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#isSeedRoot">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment>True for the packages the extraction started from (the analysis roots).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R13">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>GPLv3 and AGPLv3 are bridged by the second paragraph of AGPL section 13, so code can be combined; this holds for GPLv3 only, so the specific version must be checked.</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/KEMITCHELL_AGPL"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R20">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Incompatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Design decision by analogy with R19 (AGPL is a GPL-family license). Verified 2026-11-14: no source read states the combined-work consequences for AGPL.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#projectName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://example.org/licensegraph#packageName"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#Project"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Name of the user's own project; a subproperty of packageName.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#versionString">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#LicensePrediction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>License prediction</rdfs:label>
+    <rdfs:comment>Iteration 2: a license suggested by the TransE link-prediction model for a package version. A prediction is NOT a stored or inferred fact; it is never connected with lg:hasLicense.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#Package"/>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#License"/>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R9">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Compatible"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Permissive licenses allow use in proprietary products subject to attribution. No published source consulted in this iteration.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#ruleSource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:comment>Published source behind a cited rule (traceable evidence for the explanation).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#conflictRule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicenseConflict"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#predictionStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicensePrediction"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#PackageVersion">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Package version</rdfs:label>
+    <rdfs:comment>One resolved release of a package. Licenses and dependencies attach here.</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#License"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#licenseSource">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Where the license value came from: license_expression (SPDX), license_text, classifier, manual_override or none. Classifier values are less reliable (e.g. 'BSD License' does not say 2- or 3-clause).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/source/FSF_FAQ_POST">
+    <rdf:type rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:label>Licensing and Compliance Lab: The most frequently asked Frequently Asked Questions</rdfs:label>
+    <lg:sourcePublisher>Free Software Foundation (Jake Glass), published 2019-01-25</lg:sourcePublisher>
+    <lg:sourceUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://www.fsf.org/blogs/licensing/licensing-and-compliance-lab-the-most-frequently-asked-frequently-asked-questions</lg:sourceUrl>
+    <lg:sourceAccessed rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-04T00:00:00</lg:sourceAccessed>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n99d0c4aea2234c3cb8d39a31df0275e1b2">
+    <rdf:first rdf:resource="http://example.org/licensegraph#hasLicense"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#conflictProject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicenseConflict"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#Project"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#predictionFor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicensePrediction"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#License">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>License</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#isOsiApproved">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment>From the SPDX License List. Absent for ids not in the list (treat as not confirmed).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R16">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Combination usually possible but depends on the specific LGPL/MPL terms and versions. No published source consulted in this iteration.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R1">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Incompatible"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>A permissive project that incorporates strong-copyleft code becomes a derivative work that must be distributed under the GPL, which conflicts with keeping the permissive license (Apache page: GPLv3 software cannot be included in Apache projects).</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/APACHE_GPL"/>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/FSF_FAQ_POST"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R21">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Weak-copyleft licenses differ (LGPL, MPL, EPL, CDDL). MPL 2.0 allows combination with LGPL through Secondary Licenses (MPL FAQ Q14); other pairs need manual review.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#directlyDependsOn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://example.org/licensegraph#dependsOn"/>
+    <rdfs:comment>Stored fact: a direct edge in the deps.dev resolved dependency graph.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#ruleStatus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>'cited' = backed by a published source we read; 'design decision' = our own conservative choice, no source consulted.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#conflictDependency">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicenseConflict"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R10">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Compatible"/>
+    <lg:ruleStatus>cited</lg:ruleStatus>
+    <rdfs:comment>Permissively licensed code can be included in GPL projects; example given for Apache 2 into GPLv3. Exception handled at license level: GPL-2.0-only with Apache-2.0 (see incompatibleWith).</rdfs:comment>
+    <lg:ruleSource rdf:resource="http://example.org/licensegraph/source/APACHE_GPL"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/source/KEMITCHELL_AGPL">
+    <rdf:type rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:label>Reading AGPL: a guided introduction for first-timers</rdfs:label>
+    <lg:sourcePublisher>Kyle E. Mitchell</lg:sourcePublisher>
+    <lg:sourceUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://writing.kemitchell.com/2021/01/24/Reading-AGPL</lg:sourceUrl>
+    <lg:sourceAccessed rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-04T00:00:00</lg:sourceAccessed>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R25">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>A proprietary dependency's terms vary and may forbid redistribution. No published source consulted; review the dependency's terms.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#dependencyOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#treeContainsLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#License"/>
+    <owl:propertyChainAxiom rdf:nodeID="n99d0c4aea2234c3cb8d39a31df0275e1b1"/>
+    <rdfs:comment>Inferred: a license appearing anywhere below a package version.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#conflictVerdict">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicenseConflict"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#Verdict"/>
+    <rdfs:comment>Incompatible, or Conditional (needs review).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#StrongCopyleftLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#CopyleftLicense"/>
+    <rdfs:label>Strong copyleft license</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#ProprietaryLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:label>Proprietary license</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#isDisjunctiveLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment>True when the declared license is an OR expression (dual licensing): the user may pick ONE option, so a conflict through one option may be avoidable.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R15">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>GPL versions can be incompatible with each other (for example GPL-2.0-only code with GPL-3.0 code). No published source consulted in this iteration; check versions manually.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R26">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Depends on the two commercial agreements. No published source consulted.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="n99d0c4aea2234c3cb8d39a31df0275e1b1">
+    <rdf:first rdf:resource="http://example.org/licensegraph#dependsOn"/>
+    <rdf:rest rdf:nodeID="n99d0c4aea2234c3cb8d39a31df0275e1b2"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#packageName">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    <rdfs:comment>Name of a package or of the user's project. Deliberately has no rdfs:domain: it is used on Package and on Project, and Package is disjoint from PackageVersion (a domain would make every Project inconsistent).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R17">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#NetworkCopyleftLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#WeakCopyleftLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>Depends on the specific weak-copyleft terms (MPL 2.0 Secondary License mechanism covers GPL and LGPL, not AGPL, per the MPL FAQ Q14). Check manually.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#hasMultipleDeclaredLicenses">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment>True when more than one license id was parsed. May be dual licensing (OR) or stacked (AND); check declaredLicenseString.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#Verdict">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Verdict</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#NetworkCopyleftLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#StrongCopyleftLicense"/>
+    <rdfs:label>Network copyleft license</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#Package">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Package</rdfs:label>
+    <rdfs:comment>A PyPI project by name, independent of version (pkg:requests).</rdfs:comment>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#License"/>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#conflictLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#LicenseConflict"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:comment>The dependency license that triggered the conflict.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#incompatibleWith">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:comment>License-to-license incompatibility (e.g. GPL-2.0-only with Apache-2.0).</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/license/GPL-2.0-only">
+    <lg:incompatibleWith rdf:resource="http://example.org/licensegraph/license/Apache-2.0"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/source/QT_LGPL">
+    <rdf:type rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:label>Obligations of the LGPL</rdfs:label>
+    <lg:sourcePublisher>The Qt Company</lg:sourcePublisher>
+    <lg:sourceUrl rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://qt.io/licensing/open-source-lgpl-obligations</lg:sourceUrl>
+    <lg:sourceAccessed rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2026-11-04T00:00:00</lg:sourceAccessed>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#PublicDomainLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#PermissiveLicense"/>
+    <rdfs:label>Public-domain-like license</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#Compatible">
+    <rdf:type rdf:resource="http://example.org/licensegraph#Verdict"/>
+    <rdfs:label>Compatible</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#Project">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Project</rdfs:label>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#PackageVersion"/>
+    <rdfs:comment>The user's own project, treated as a package version that is audited.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#verdict">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <rdfs:range rdf:resource="http://example.org/licensegraph#Verdict"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#sourcePublisher">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#CompatibilityRule">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:label>Compatibility rule</rdfs:label>
+    <rdfs:comment>Curated rule: project-license category vs dependency-license category gives a verdict.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#isFsfLibre">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    <rdfs:comment>From the SPDX License List. Only present where SPDX gives a value.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#sourceAccessed">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://example.org/licensegraph#Source"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph/rule/R27">
+    <rdf:type rdf:resource="http://example.org/licensegraph#CompatibilityRule"/>
+    <lg:projectCategory rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+    <lg:dependencyCategory rdf:resource="http://example.org/licensegraph#UnknownLicense"/>
+    <lg:verdict rdf:resource="http://example.org/licensegraph#Conditional"/>
+    <lg:ruleStatus>design decision</lg:ruleStatus>
+    <rdfs:comment>See R7.</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#Incompatible">
+    <rdf:type rdf:resource="http://example.org/licensegraph#Verdict"/>
+    <rdfs:label>Incompatible</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#Conditional">
+    <rdf:type rdf:resource="http://example.org/licensegraph#Verdict"/>
+    <rdfs:label>Conditional</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#WeakCopyleftLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#CopyleftLicense"/>
+    <rdfs:label>Weak copyleft license</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#CopyleftLicense">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://example.org/licensegraph#License"/>
+    <rdfs:label>Copyleft license</rdfs:label>
+    <owl:disjointWith rdf:resource="http://example.org/licensegraph#ProprietaryLicense"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/licensegraph#versionOf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+</rdf:RDF>
