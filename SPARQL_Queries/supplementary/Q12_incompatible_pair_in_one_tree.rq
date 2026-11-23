@@ -1,0 +1,23 @@
+# Q12 | Two licenses in the same tree that are incompatible with each other   (CQ11)
+# Features: reasoning over a symmetric property and a property chain, FILTER
+# The ontology stores lic:GPL-2.0-only lg:incompatibleWith lic:Apache-2.0 in ONE direction only.
+# lg:incompatibleWith is symmetric, so the reasoner also derives Apache-2.0 -> GPL-2.0-only; the
+# FILTER on the IRIs keeps each pair once.
+# The stored pair is a placeholder in the ontology: verify it against a published guide, and add
+# the others you rely on, before using the result.
+# Parameter: ?projectName (edit the VALUES line).
+
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT DISTINCT ?licenseA ?licenseB
+WHERE {
+  VALUES ?projectName { "acme-mit-app" }
+  ?proj a lg:Project ;
+        lg:projectName ?projectName ;
+        lg:treeContainsLicense ?a , ?b .
+  ?a lg:incompatibleWith ?b ;
+     lg:spdxId ?licenseA .
+  ?b lg:spdxId ?licenseB .
+  FILTER (STR(?a) < STR(?b))
+}
+ORDER BY ?licenseA ?licenseB

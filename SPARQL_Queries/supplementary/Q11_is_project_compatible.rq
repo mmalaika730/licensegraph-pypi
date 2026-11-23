@@ -1,0 +1,17 @@
+# Q11 | Is this project's license compatible with its whole dependency tree?   (CQ8)
+# Features: ASK, reasoning-derived facts
+# PREREQUISITE: run R01_infer_license_conflicts.ru once.
+# Result:  false = no Incompatible conflict was derived;  true = at least one exists.
+# "Conditional" verdicts are not counted here; see Q10 for those.
+# Parameter: ?projectName (edit the VALUES line).
+
+PREFIX lg: <http://example.org/licensegraph#>
+
+ASK {
+  VALUES ?projectName { "acme-mit-app" }
+  ?proj a lg:Project ;
+        lg:projectName ?projectName .
+  ?c a lg:LicenseConflict ;
+     lg:conflictProject ?proj ;
+     lg:conflictVerdict lg:Incompatible .
+}

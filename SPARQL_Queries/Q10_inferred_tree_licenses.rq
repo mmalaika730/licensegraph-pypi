@@ -1,0 +1,18 @@
+# inference: required
+# Q10  All licenses in a project's dependency tree, via the property chain
+# CQs: CQ8, CQ9         Features: inference-dependent (property chain axiom)
+#
+#   Explicit facts : proj directlyDependsOn A ; A directlyDependsOn B ; A hasLicense Apache-2.0 ; B hasLicense BSD-3-Clause
+#   Schema         : treeContainsLicense = dependsOn o hasLicense  (property chain), dependsOn transitive
+#   Inferred facts : proj treeContainsLicense Apache-2.0 ; proj treeContainsLicense BSD-3-Clause   (never stored)
+# On the explicit data alone it returns no rows.
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT ?licenseId
+WHERE {
+  VALUES ?projName { "acme-mit-app" }
+  ?proj lg:packageName ?projName ;
+        lg:treeContainsLicense ?lic .
+  ?lic  lg:spdxId ?licenseId .
+}
+ORDER BY ?licenseId

@@ -1,0 +1,23 @@
+# Q07 | Size of each seed package's dependency tree and its copyleft share   (CQ13)
+# Features: property path (+), OPTIONAL, aggregation with COUNT DISTINCT, computed column
+# Roots are the seed packages (lg:isSeedRoot true).
+
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>
+
+SELECT (REPLACE(STR(?root), "^.*/ver/", "") AS ?rootLabel)
+       (COUNT(DISTINCT ?dep) AS ?transitiveDeps)
+       (COUNT(DISTINCT ?copyleftDep) AS ?copyleftDeps)
+       (ROUND(100 * xsd:decimal(COUNT(DISTINCT ?copyleftDep)) / xsd:decimal(COUNT(DISTINCT ?dep))) AS ?copyleftPercent)
+WHERE {
+  ?root lg:isSeedRoot true ;
+        lg:directlyDependsOn+ ?dep .
+  OPTIONAL {
+    ?dep lg:hasLicense ?l .
+    ?l a/rdfs:subClassOf* lg:CopyleftLicense .
+    BIND (?dep AS ?copyleftDep)
+  }
+}
+GROUP BY ?root
+ORDER BY DESC(?copyleftDeps) ?rootLabel

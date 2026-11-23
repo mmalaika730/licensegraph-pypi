@@ -1,0 +1,16 @@
+# Q05  Which licenses appear most often across the package versions in the graph?
+# CQs: CQ12            Features: aggregation (COUNT DISTINCT), GROUP BY, ORDER BY, OPTIONAL
+# Projects are excluded so only real dependencies are counted.
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?licenseId ?licenseName (COUNT(DISTINCT ?v) AS ?versionsUsing)
+WHERE {
+  ?v   a lg:PackageVersion ;
+       lg:hasLicense ?lic .
+  FILTER NOT EXISTS { ?v a lg:Project }
+  ?lic lg:spdxId ?licenseId .
+  OPTIONAL { ?lic rdfs:label ?licenseName }
+}
+GROUP BY ?licenseId ?licenseName
+ORDER BY DESC(?versionsUsing) ?licenseId

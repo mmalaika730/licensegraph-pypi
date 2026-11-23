@@ -1,0 +1,25 @@
+# Q05 | Licenses in a tree that are not confirmed OSI-approved   (CQ5, CQ14)
+# Features: property path (+), OPTIONAL, FILTER with !BOUND
+# Parameter: ?rootName = a project name or a seed package name.
+# lg:isOsiApproved is absent for ids that are not in the SPDX list (non-standard, NOASSERTION,
+# LicenseRef-...), so the filter treats "no flag" the same as "false".
+
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT DISTINCT ?depName ?depVersion ?licenseId ?osiApproved
+WHERE {
+  VALUES ?rootName { "acme-mit-app" }
+  { ?root a lg:Project ; lg:projectName ?rootName }
+  UNION
+  { ?pkg lg:packageName ?rootName ; lg:hasVersion ?root . ?root lg:isSeedRoot true }
+
+  ?root lg:directlyDependsOn+ ?dep .
+  ?depPkg lg:hasVersion ?dep ;
+          lg:packageName ?depName .
+  ?dep lg:versionString ?depVersion ;
+       lg:hasLicense ?lic .
+  ?lic lg:spdxId ?licenseId .
+  OPTIONAL { ?lic lg:isOsiApproved ?osiApproved }
+  FILTER (!BOUND(?osiApproved) || ?osiApproved = false)
+}
+ORDER BY ?licenseId ?depName

@@ -1,0 +1,19 @@
+# Q01  Direct dependencies of a project and their licenses
+# CQs: CQ1, CQ2        Features: basic graph pattern, OPTIONAL
+# Change the project name in VALUES to your own.
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?dependency ?version ?licenseId ?licenseName
+WHERE {
+  VALUES ?projName { "acme-mit-app" }
+  ?proj lg:packageName ?projName ;
+        lg:directlyDependsOn ?dv .
+  ?pkg  lg:hasVersion ?dv ;
+        lg:packageName ?dependency .
+  ?dv   lg:versionString ?version ;
+        lg:hasLicense ?lic .
+  ?lic  lg:spdxId ?licenseId .
+  OPTIONAL { ?lic rdfs:label ?licenseName }
+}
+ORDER BY ?dependency

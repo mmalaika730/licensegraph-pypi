@@ -1,0 +1,17 @@
+# Q07  Which projects and packages transitively depend on a given package?
+# CQs: CQ4             Features: property path (+) walked towards the dependent, COALESCE, OPTIONAL
+# Use it to answer "who is exposed to this GPL package?". Change the name in VALUES.
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT DISTINCT ?exposedName ?exposedVersion
+WHERE {
+  VALUES ?targetName { "mutagen" }
+  ?targetPkg lg:packageName ?targetName ;
+             lg:hasVersion ?target .
+  ?x lg:directlyDependsOn+ ?target .
+  OPTIONAL { ?x lg:packageName ?projectName }
+  OPTIONAL { ?xPkg lg:hasVersion ?x ; lg:packageName ?packageName }
+  OPTIONAL { ?x lg:versionString ?exposedVersion }
+  BIND(COALESCE(?projectName, ?packageName) AS ?exposedName)
+}
+ORDER BY ?exposedName ?exposedVersion

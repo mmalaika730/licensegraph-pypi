@@ -1,0 +1,13 @@
+# requires: 00_infer_conflicts.ru has been run
+# Q12  Is a project license compatible with everything in its dependency tree?
+# CQs: CQ8             Features: ASK, FILTER NOT EXISTS
+# true  = no Incompatible or Conditional conflict was inferred for this project.
+# false = at least one; run Q11 for the details.
+PREFIX lg: <http://example.org/licensegraph#>
+
+ASK {
+  VALUES ?projName { "acme-mit-app" }
+  ?proj a lg:Project ;
+        lg:packageName ?projName .
+  FILTER NOT EXISTS { ?c a lg:LicenseConflict ; lg:conflictProject ?proj }
+}

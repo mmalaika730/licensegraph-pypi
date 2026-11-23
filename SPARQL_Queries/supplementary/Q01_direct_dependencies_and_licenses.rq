@@ -1,0 +1,23 @@
+# Q01 | Direct dependencies and their licenses   (CQ1, CQ2)
+# Features: basic graph patterns, UNION (root is a project or a seed package), OPTIONAL
+# Parameter: ?rootName = a project name or a seed package name (edit the VALUES line).
+# OPTIONAL keeps licenses that have no OSI flag (e.g. non-standard, NOASSERTION).
+
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT ?depName ?depVersion ?licenseId ?osiApproved
+WHERE {
+  VALUES ?rootName { "acme-mit-app" }
+  { ?root a lg:Project ; lg:projectName ?rootName }
+  UNION
+  { ?pkg lg:packageName ?rootName ; lg:hasVersion ?root . ?root lg:isSeedRoot true }
+
+  ?root lg:directlyDependsOn ?dep .
+  ?depPkg lg:hasVersion ?dep ;
+          lg:packageName ?depName .
+  ?dep lg:versionString ?depVersion ;
+       lg:hasLicense ?lic .
+  ?lic lg:spdxId ?licenseId .
+  OPTIONAL { ?lic lg:isOsiApproved ?osiApproved }
+}
+ORDER BY ?depName ?licenseId

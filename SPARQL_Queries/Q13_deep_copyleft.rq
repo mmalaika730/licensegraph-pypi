@@ -1,0 +1,18 @@
+# Q13  Copyleft licenses that sit at least three hops below a package version
+# CQs: CQ7             Features: fixed-length path (/), variable path (+), FILTER, multi-hop
+# "At least 3" is written as three mandatory hops followed by zero-or-more more: a/b/c/d*.
+# This is a question an LLM cannot answer from memory: it depends on the real resolved tree.
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?root ?deepDependency ?licenseId
+WHERE {
+  ?v lg:isSeedRoot true .
+  ?v lg:directlyDependsOn/lg:directlyDependsOn/lg:directlyDependsOn/lg:directlyDependsOn* ?dv .
+  ?dv lg:hasLicense ?lic .
+  ?lic a/rdfs:subClassOf* lg:CopyleftLicense ;
+       lg:spdxId ?licenseId .
+  BIND(STRAFTER(STR(?v),  "/ver/") AS ?root)
+  BIND(STRAFTER(STR(?dv), "/ver/") AS ?deepDependency)
+}
+ORDER BY ?root ?licenseId ?deepDependency

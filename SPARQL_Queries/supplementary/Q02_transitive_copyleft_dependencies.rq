@@ -1,0 +1,26 @@
+# Q02 | Transitive copyleft dependencies   (CQ3)
+# Features: property path (+), multi-hop traversal, subclass path (a/rdfs:subClassOf*)
+# Parameter: ?rootName = a project name or a seed package name.
+# Variable depth: directlyDependsOn+ follows any number of hops.
+# Weak, Strong and Network copyleft all match because each is a subclass of CopyleftLicense.
+# See Q03 for the exact chain behind each hit.
+
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?depName ?depVersion ?licenseId
+WHERE {
+  VALUES ?rootName { "acme-mit-app" }
+  { ?root a lg:Project ; lg:projectName ?rootName }
+  UNION
+  { ?pkg lg:packageName ?rootName ; lg:hasVersion ?root . ?root lg:isSeedRoot true }
+
+  ?root lg:directlyDependsOn+ ?dep .
+  ?depPkg lg:hasVersion ?dep ;
+          lg:packageName ?depName .
+  ?dep lg:versionString ?depVersion ;
+       lg:hasLicense ?lic .
+  ?lic a/rdfs:subClassOf* lg:CopyleftLicense ;
+       lg:spdxId ?licenseId .
+}
+ORDER BY ?licenseId ?depName

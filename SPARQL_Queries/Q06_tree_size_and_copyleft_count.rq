@@ -1,0 +1,22 @@
+# Q06  For each analysis root: size of its transitive tree and how many of those versions are copyleft
+# CQs: CQ13            Features: aggregation, property path (+), two OPTIONALs, COUNT DISTINCT
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?package ?version
+       (COUNT(DISTINCT ?dep)         AS ?transitiveDependencies)
+       (COUNT(DISTINCT ?copyleftDep) AS ?copyleftDependencies)
+WHERE {
+  ?v   lg:isSeedRoot true ;
+       lg:versionString ?version .
+  ?pkg lg:hasVersion ?v ;
+       lg:packageName ?package .
+  OPTIONAL { ?v lg:directlyDependsOn+ ?dep }
+  OPTIONAL {
+    ?v lg:directlyDependsOn+ ?copyleftDep .
+    ?copyleftDep lg:hasLicense ?cl .
+    ?cl a/rdfs:subClassOf* lg:CopyleftLicense .
+  }
+}
+GROUP BY ?package ?version
+ORDER BY DESC(?copyleftDependencies) DESC(?transitiveDependencies) ?package

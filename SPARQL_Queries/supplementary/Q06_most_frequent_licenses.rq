@@ -1,0 +1,16 @@
+# Q06 | Which licenses appear most often across the graph?   (CQ12)
+# Features: aggregation (COUNT, GROUP BY, ORDER BY, LIMIT), FILTER NOT EXISTS
+# Projects are PackageVersions too (subclass), so they are excluded: the count is about dependencies.
+
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT ?licenseId (COUNT(DISTINCT ?version) AS ?packageVersions)
+WHERE {
+  ?version a lg:PackageVersion ;
+           lg:hasLicense ?lic .
+  FILTER NOT EXISTS { ?version a lg:Project }
+  ?lic lg:spdxId ?licenseId .
+}
+GROUP BY ?licenseId
+ORDER BY DESC(?packageVersions) ?licenseId
+LIMIT 15

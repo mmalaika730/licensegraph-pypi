@@ -1,0 +1,23 @@
+# Q08 | INFERENCE 1: which licenses are copyleft, and of which kind?   (CQ9)
+# Features: reasoning over rdfs:subClassOf
+# Nobody stores "this license is a CopyleftLicense". Each license is typed with its most specific
+# category only (AGPL-3.0-only is a NetworkCopyleftLicense). The schema says
+#   NetworkCopyleft  subClassOf  StrongCopyleft  subClassOf  Copyleft
+# and the reasoner derives the broader classes. So AGPL appears here with isStrongCopyleft = true
+# although no triple says so.
+#
+# SHOW THE DIFFERENCE IN GRAPHDB (put the FROM line directly above WHERE)
+#   as written                                    -> every copyleft license
+#   FROM <http://www.ontotext.com/explicit>       -> 0 rows (the class is never stored)
+#   FROM <http://www.ontotext.com/implicit>       -> only the derived statements
+
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT ?licenseId ?isStrongCopyleft ?isNetworkCopyleft
+WHERE {
+  ?lic a lg:CopyleftLicense ;
+       lg:spdxId ?licenseId .
+  BIND (EXISTS { ?lic a lg:StrongCopyleftLicense } AS ?isStrongCopyleft)
+  BIND (EXISTS { ?lic a lg:NetworkCopyleftLicense } AS ?isNetworkCopyleft)
+}
+ORDER BY ?licenseId

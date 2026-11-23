@@ -1,0 +1,26 @@
+# inference: required
+# Q09  Copyleft dependencies of a project, using ONLY inferred facts
+# CQs: CQ3, CQ9         Features: inference-dependent (no property path, no subClassOf path)
+#
+# This query only works when the reasoner is on (GraphDB ruleset OWL2-RL):
+#   Explicit facts : proj directlyDependsOn A ; A directlyDependsOn B ; B hasLicense GPL-3.0-only
+#                    GPL-3.0-only a StrongCopyleftLicense
+#   Schema         : directlyDependsOn subPropertyOf dependsOn ; dependsOn is transitive
+#                    StrongCopyleftLicense subClassOf CopyleftLicense
+#   Inferred facts : proj dependsOn B        (never stored)
+#                    GPL-3.0-only a CopyleftLicense   (never stored)
+# On the explicit data alone it returns no rows; the harness records both counts.
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT ?dependency ?licenseId
+WHERE {
+  VALUES ?projName { "acme-mit-app" }
+  ?proj lg:packageName ?projName ;
+        lg:dependsOn ?dv .
+  ?pkg  lg:hasVersion ?dv ;
+        lg:packageName ?dependency .
+  ?dv   lg:hasLicense ?lic .
+  ?lic  a lg:CopyleftLicense ;
+        lg:spdxId ?licenseId .
+}
+ORDER BY ?licenseId ?dependency

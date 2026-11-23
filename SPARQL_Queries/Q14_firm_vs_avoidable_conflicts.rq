@@ -1,0 +1,22 @@
+# Q14  Which conflicts are firm and which could be avoided by choosing another license option?
+# CQs: CQ10, CQ11      Features: aggregation, inference result (LicenseConflict from 00_infer_conflicts.ru), CASE via IF
+# PREREQUISITE: run 00_infer_conflicts.ru once.
+# Some packages are dual-licensed with OR (for example "Public-Domain OR BSD-3-Clause OR GPL-2.0-or-later").
+# The rule flags the GPL option, but the user may simply pick the permissive option.
+# "avoidable" = the dependency is an OR-expression, so check whether another option works.
+# "firm"      = the dependency has a single license (or AND), so the conflict has to be resolved.
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT ?project ?verdictLabel ?kind (COUNT(DISTINCT ?c) AS ?conflicts)
+WHERE {
+  ?c a lg:LicenseConflict ;
+     lg:conflictProject    ?proj ;
+     lg:conflictDependency ?dep ;
+     lg:conflictVerdict    ?verdict .
+  ?proj lg:projectName ?project .
+  ?verdict <http://www.w3.org/2000/01/rdf-schema#label> ?verdictLabel .
+  ?dep lg:isDisjunctiveLicense ?dual .
+  BIND (IF(?dual, "avoidable (dual license, pick another option)", "firm") AS ?kind)
+}
+GROUP BY ?project ?verdictLabel ?kind
+ORDER BY ?project ?verdictLabel ?kind

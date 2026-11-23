@@ -1,0 +1,27 @@
+# requires: 00_infer_conflicts.ru has been run
+# Q11  Conflicts inferred for every project, with the rule that fired
+# CQs: CQ10            Features: reading rule-derived facts, OPTIONAL, GROUP BY not needed
+# dualLicensed = true means the dependency lists several licenses (maybe "A OR B"). Check
+# declaredLicenseString before treating it as a real conflict.
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rule: <http://example.org/licensegraph/rule/>
+
+SELECT ?project ?projectLicense ?dependency ?dependencyLicense ?verdict ?rule ?dualLicensed ?declared
+WHERE {
+  ?c a lg:LicenseConflict ;
+     lg:conflictProject    ?proj ;
+     lg:conflictDependency ?dv ;
+     lg:conflictLicense    ?dl ;
+     lg:conflictRule       ?r ;
+     lg:conflictVerdict    ?vd .
+  ?proj lg:packageName ?project ;
+        lg:hasLicense ?pl .
+  ?pl lg:spdxId ?projectLicense .
+  ?dl lg:spdxId ?dependencyLicense .
+  BIND(STRAFTER(STR(?dv), "/ver/") AS ?dependency)
+  BIND(STRAFTER(STR(?r), "/rule/") AS ?rule)
+  BIND(STRAFTER(STR(?vd), "#") AS ?verdict)
+  OPTIONAL { ?dv lg:hasMultipleDeclaredLicenses ?dualLicensed }
+  OPTIONAL { ?dv lg:declaredLicenseString ?declared }
+}
+ORDER BY ?project ?verdict ?dependency

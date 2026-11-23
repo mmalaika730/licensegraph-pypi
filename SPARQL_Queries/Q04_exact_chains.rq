@@ -1,0 +1,47 @@
+# Q04  The exact dependency chain that leads to each copyleft license
+# CQs: CQ3 (chain), CQ15   Features: multi-hop, UNION, BIND/CONCAT, variable-length via fixed-length branches
+# A SPARQL property path returns only endpoints, never the path itself, so the chain is built by
+# one UNION branch per depth (1 to 5 hops). Deeper trees need another branch; Q03 still finds them.
+# Node labels are the "name/version" part of the version IRI.
+# (DISTINCT: GraphDB stores inferred types, so a license typed StrongCopyleft AND Copyleft would match the path twice.)
+# (Fixed: the root label is taken from ?proj INSIDE each branch; ?projName from the outer VALUES is not
+#  visible inside a UNION group in SPARQL, which left the chain empty.)
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?hops ?licenseId ?chain
+WHERE {
+  VALUES ?projName { "acme-mit-app" }
+  ?proj lg:packageName ?projName .
+  {
+    ?proj lg:directlyDependsOn ?n1 .
+    BIND(?n1 AS ?end) BIND(1 AS ?hops)
+    BIND(CONCAT(STRAFTER(STR(?proj), "/project/"), " -> ", STRAFTER(STR(?n1), "/ver/")) AS ?chain)
+  } UNION {
+    ?proj lg:directlyDependsOn ?n1 . ?n1 lg:directlyDependsOn ?n2 .
+    BIND(?n2 AS ?end) BIND(2 AS ?hops)
+    BIND(CONCAT(STRAFTER(STR(?proj), "/project/"), " -> ", STRAFTER(STR(?n1), "/ver/"), " -> ", STRAFTER(STR(?n2), "/ver/")) AS ?chain)
+  } UNION {
+    ?proj lg:directlyDependsOn ?n1 . ?n1 lg:directlyDependsOn ?n2 . ?n2 lg:directlyDependsOn ?n3 .
+    BIND(?n3 AS ?end) BIND(3 AS ?hops)
+    BIND(CONCAT(STRAFTER(STR(?proj), "/project/"), " -> ", STRAFTER(STR(?n1), "/ver/"), " -> ", STRAFTER(STR(?n2), "/ver/"),
+                " -> ", STRAFTER(STR(?n3), "/ver/")) AS ?chain)
+  } UNION {
+    ?proj lg:directlyDependsOn ?n1 . ?n1 lg:directlyDependsOn ?n2 . ?n2 lg:directlyDependsOn ?n3 .
+    ?n3 lg:directlyDependsOn ?n4 .
+    BIND(?n4 AS ?end) BIND(4 AS ?hops)
+    BIND(CONCAT(STRAFTER(STR(?proj), "/project/"), " -> ", STRAFTER(STR(?n1), "/ver/"), " -> ", STRAFTER(STR(?n2), "/ver/"),
+                " -> ", STRAFTER(STR(?n3), "/ver/"), " -> ", STRAFTER(STR(?n4), "/ver/")) AS ?chain)
+  } UNION {
+    ?proj lg:directlyDependsOn ?n1 . ?n1 lg:directlyDependsOn ?n2 . ?n2 lg:directlyDependsOn ?n3 .
+    ?n3 lg:directlyDependsOn ?n4 . ?n4 lg:directlyDependsOn ?n5 .
+    BIND(?n5 AS ?end) BIND(5 AS ?hops)
+    BIND(CONCAT(STRAFTER(STR(?proj), "/project/"), " -> ", STRAFTER(STR(?n1), "/ver/"), " -> ", STRAFTER(STR(?n2), "/ver/"),
+                " -> ", STRAFTER(STR(?n3), "/ver/"), " -> ", STRAFTER(STR(?n4), "/ver/"),
+                " -> ", STRAFTER(STR(?n5), "/ver/")) AS ?chain)
+  }
+  ?end lg:hasLicense ?lic .
+  ?lic a/rdfs:subClassOf* lg:CopyleftLicense ;
+       lg:spdxId ?licenseId .
+}
+ORDER BY ?hops ?licenseId ?chain

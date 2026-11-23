@@ -1,0 +1,21 @@
+# Q09 | INFERENCE 2: every license found anywhere in a project's dependency tree   (CQ8, supports Q11)
+# Features: reasoning over a transitive property and a property chain
+# lg:treeContainsLicense is NEVER stored. The ontology defines it as the chain
+#   dependsOn o hasLicense
+# and lg:dependsOn is transitive (lg:directlyDependsOn is a subproperty of it), so the reasoner
+# derives project -> license for dependencies at every depth.
+# Parameter: ?projectName (edit the VALUES line).
+#
+# In GraphDB, add  FROM <http://www.ontotext.com/explicit>  above WHERE to see 0 rows.
+
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT ?licenseId
+WHERE {
+  VALUES ?projectName { "acme-mit-app" }
+  ?proj a lg:Project ;
+        lg:projectName ?projectName ;
+        lg:treeContainsLicense ?lic .
+  ?lic lg:spdxId ?licenseId .
+}
+ORDER BY ?licenseId

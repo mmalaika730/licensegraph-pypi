@@ -1,0 +1,31 @@
+# Q10 | INFERENCE 3: license conflicts derived by rule R01   (CQ10)
+# Features: querying inferred individuals; joins across rule, license, dependency
+# PREREQUISITE: run R01_infer_license_conflicts.ru once. The conflicts do not exist before that.
+# Parameter: ?projectName (edit the VALUES line). Use Q03 with the same name to see the chain
+# behind each dependency.
+# "Incompatible" is a conflict; "Conditional" needs a human decision.
+# The dualLicenseWarning column marks dependencies with more than one parsed license id:
+# an "A OR B" package may be usable under the permissive option, so verify before acting.
+
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?verdictLabel ?depLabel ?licenseId ?rule ?dualLicenseWarning
+WHERE {
+  VALUES ?projectName { "acme-mit-app" }
+  ?proj a lg:Project ;
+        lg:projectName ?projectName .
+  ?c a lg:LicenseConflict ;
+     lg:conflictProject    ?proj ;
+     lg:conflictDependency ?dep ;
+     lg:conflictLicense    ?lic ;
+     lg:conflictRule       ?ruleNode ;
+     lg:conflictVerdict    ?verdict .
+  ?lic lg:spdxId ?licenseId .
+  ?verdict rdfs:label ?verdictLabel .
+  ?dep lg:hasMultipleDeclaredLicenses ?multi .
+  BIND (REPLACE(STR(?dep), "^.*/ver/", "") AS ?depLabel)
+  BIND (STRAFTER(STR(?ruleNode), "/rule/") AS ?rule)
+  BIND (IF(?multi, "check dual licensing", "") AS ?dualLicenseWarning)
+}
+ORDER BY ?verdictLabel ?depLabel ?licenseId ?rule

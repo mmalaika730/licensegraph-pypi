@@ -1,0 +1,21 @@
+# Q08  For each direct dependency of a project, the copyleft licenses at or below it
+# CQs: CQ6             Features: multi-hop (zero-or-more path *), GROUP BY, GROUP_CONCAT, UNION-free grouping
+# The * path includes the dependency itself, so a copyleft direct dependency is reported too.
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?directDependency
+       (GROUP_CONCAT(DISTINCT ?licenseId; separator=", ") AS ?copyleftLicensesBelow)
+       (COUNT(DISTINCT ?x) AS ?affectedVersions)
+WHERE {
+  VALUES ?projName { "acme-mit-app" }
+  ?proj lg:packageName ?projName ;
+        lg:directlyDependsOn ?d .
+  ?d lg:directlyDependsOn* ?x .
+  ?x lg:hasLicense ?lic .
+  ?lic a/rdfs:subClassOf* lg:CopyleftLicense ;
+       lg:spdxId ?licenseId .
+  BIND(STRAFTER(STR(?d), "/ver/") AS ?directDependency)
+}
+GROUP BY ?directDependency
+ORDER BY ?directDependency

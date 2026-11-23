@@ -1,0 +1,19 @@
+# Q03  Every copyleft license anywhere in a project's dependency tree
+# CQs: CQ3 (which dependencies)   Features: property path (+), class hierarchy path, multi-hop
+# Works with or without reasoning. Q04 gives the exact chain for each hit.
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?dependency ?version ?licenseId
+WHERE {
+  VALUES ?projName { "acme-mit-app" }
+  ?proj lg:packageName ?projName ;
+        lg:directlyDependsOn+ ?dv .
+  ?pkg  lg:hasVersion ?dv ;
+        lg:packageName ?dependency .
+  ?dv   lg:versionString ?version ;
+        lg:hasLicense ?lic .
+  ?lic  a/rdfs:subClassOf* lg:CopyleftLicense ;
+        lg:spdxId ?licenseId .
+}
+ORDER BY ?licenseId ?dependency

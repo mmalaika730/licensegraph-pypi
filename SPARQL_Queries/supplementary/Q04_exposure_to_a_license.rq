@@ -1,0 +1,17 @@
+# Q04 | Who is exposed to a given license, anywhere below them?   (CQ4)
+# Features: inverse property path inside a repetition  (^p)+ , aggregation (COUNT DISTINCT), GROUP BY
+# Parameter: ?licenseId = an SPDX id (edit the VALUES line).
+# Reads upward from the packages that carry the license to everything that depends on them.
+
+PREFIX lg: <http://example.org/licensegraph#>
+
+SELECT ?exposed (COUNT(DISTINCT ?dep) AS ?viaPackages)
+WHERE {
+  VALUES ?licenseId { "GPL-3.0-only" }
+  ?lic lg:spdxId ?licenseId .
+  ?dep lg:hasLicense ?lic .
+  ?dep (^lg:directlyDependsOn)+ ?exposedNode .
+  BIND (REPLACE(STR(?exposedNode), "^.*/(ver|project)/", "") AS ?exposed)
+}
+GROUP BY ?exposed
+ORDER BY DESC(?viaPackages) ?exposed

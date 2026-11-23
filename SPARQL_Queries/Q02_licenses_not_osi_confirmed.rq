@@ -1,0 +1,16 @@
+# Q02  Licenses that are not confirmed OSI-approved, and how many package versions use them
+# CQs: CQ5, CQ14       Features: FILTER, OPTIONAL, negation via !BOUND, aggregation
+# A license with no isOsiApproved value (not in the SPDX list, e.g. non-standard) counts as "not confirmed".
+PREFIX lg:   <http://example.org/licensegraph#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT ?licenseId ?osiFlag (COUNT(DISTINCT ?v) AS ?versionsUsing)
+WHERE {
+  ?lic a/rdfs:subClassOf* lg:License ;
+       lg:spdxId ?licenseId .
+  OPTIONAL { ?lic lg:isOsiApproved ?osiFlag }
+  FILTER(!BOUND(?osiFlag) || ?osiFlag = false)
+  OPTIONAL { ?v lg:hasLicense ?lic . FILTER NOT EXISTS { ?v a lg:Project } }
+}
+GROUP BY ?licenseId ?osiFlag
+ORDER BY DESC(?versionsUsing) ?licenseId
