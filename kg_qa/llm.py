@@ -54,7 +54,7 @@ class LLM:
     def chat(self, system: str, user: str) -> str:
         body = json.dumps({"model": self.model, "temperature": self.temperature, "max_tokens": self.max_tokens,
                            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}).encode("utf-8")
-        headers = {"Content-Type": "application/json"}
+        headers = {"Content-Type": "application/json", "User-Agent": "licensegraph-pypi/1.0 (coursework)"}   # some providers (Cloudflare) reject the default Python user agent with 403 / error 1010
         if self.api_key:
             headers["Authorization"] = f"Bearer {self.api_key}"
         req = urllib.request.Request(self.base_url + "/chat/completions", data=body, headers=headers, method="POST")
