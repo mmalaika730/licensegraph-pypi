@@ -1,0 +1,6 @@
+QUESTION: {question}
+
+FACTS (retrieved from the knowledge graph at query time):
+{facts}
+
+{note}Answer the question using only these facts, citing fact ids.
