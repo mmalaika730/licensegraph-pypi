@@ -1,0 +1,38 @@
+LicenseGraph-PyPI build report
+==============================
+Package versions (nodes)  : 179
+Packages (distinct names) : 176
+Direct dependency edges   : 247
+Distinct licenses used    : 23
+A-Box triples (instances) : 2365
+T-Box (ontology) triples : 391
+Merged (T-Box + A-Box)    : 2756
+
+Cleaning actions
+  projects loaded: 4
+
+License usage by category (node-license links)
+  Permissive: 176
+  StrongCopyleft: 12
+  WeakCopyleft: 7
+  PublicDomain: 3
+  Proprietary: 1
+
+Most frequent licenses
+  MIT: 67
+  BSD-3-Clause: 60
+  Apache-2.0: 28
+  BSD-2-Clause: 8
+  GPL-2.0-or-later: 7
+  PSF-2.0: 5
+  GPL-3.0-or-later: 3
+  LGPL-2.1-or-later: 2
+  MPL-2.0: 2
+  LGPL-3.0-only: 2
+
+NEEDS CURATION: SPDX ids with no category in license_categories.csv (typed UnknownLicense): none
+Ids not found in the SPDX list (no OSI/FSF flags): ['LicenseRef-Proprietary', 'LicenseRef-Public-Domain']
+OR-expressions (dual licensing: every option is currently linked as a license): ['cryptography==50.0.2: Apache-2.0 OR BSD-3-Clause', 'docutils==0.23: LicenseRef-Public-Domain OR BSD-3-Clause OR GPL-2.0-or-later', 'outcome==1.3.0.post0: MIT OR Apache-2.0', 'packaging==26.3: Apache-2.0 OR BSD-2-Clause', 'pyinstaller-hooks-contrib==2026.9: Apache-2.0 OR GPL-2.0-only', 'python-dateutil==2.9.0.post0: BSD-3-Clause OR Apache-2.0', 'roman-numerals==4.1.0: 0BSD OR CC0-1.0', 'sniffio==1.3.1: MIT OR Apache-2.0', 'text-unidecode==1.3: Artistic-2.0 OR GPL-2.0-or-later', 'trio==0.35.0: MIT OR Apache-2.0']
+WITH-exceptions (exception dropped, base license kept): ['pyinstaller==6.22.3: exception dropped: GPL-2.0-or-later WITH Bootloader-exception']
+Dropped edges (first 10): none
+Project problems: none

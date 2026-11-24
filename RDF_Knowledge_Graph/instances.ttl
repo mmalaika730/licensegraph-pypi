@@ -1,0 +1,2754 @@
+@prefix lg: <http://example.org/licensegraph#> .
+@prefix license: <http://example.org/licensegraph/license/> .
+@prefix pkg: <http://example.org/licensegraph/pkg/> .
+@prefix project: <http://example.org/licensegraph/project/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+pkg:aiohappyeyeballs a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/aiohappyeyeballs/2.7.1> ;
+    lg:packageName "aiohappyeyeballs" .
+
+pkg:aiohttp a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/aiohttp/3.14.5> ;
+    lg:packageName "aiohttp" .
+
+pkg:aiosignal a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/aiosignal/1.4.0> ;
+    lg:packageName "aiosignal" .
+
+pkg:alabaster a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/alabaster/1.0.0> ;
+    lg:packageName "alabaster" .
+
+pkg:altgraph a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/altgraph/0.17.5> ;
+    lg:packageName "altgraph" .
+
+pkg:amqp a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/amqp/5.4.2> ;
+    lg:packageName "amqp" .
+
+pkg:annotated-doc a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/annotated-doc/0.0.5> ;
+    lg:packageName "annotated-doc" .
+
+pkg:annotated-types a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/annotated-types/0.8.0> ;
+    lg:packageName "annotated-types" .
+
+pkg:ansible a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/ansible/14.5.0> ;
+    lg:packageName "ansible" .
+
+pkg:ansible-core a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/ansible-core/2.21.6>,
+        <http://example.org/licensegraph/ver/ansible-core/2.22.0> ;
+    lg:packageName "ansible-core" .
+
+pkg:anyio a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/anyio/4.16.0> ;
+    lg:packageName "anyio" .
+
+pkg:asgiref a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/asgiref/3.13.0> ;
+    lg:packageName "asgiref" .
+
+pkg:astroid a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/astroid/4.3.4> ;
+    lg:packageName "astroid" .
+
+pkg:attrs a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/attrs/26.1.0> ;
+    lg:packageName "attrs" .
+
+pkg:automat a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/automat/25.4.16> ;
+    lg:packageName "automat" .
+
+pkg:babel a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/babel/2.18.0> ;
+    lg:packageName "babel" .
+
+pkg:backports-zstd a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/backports-zstd/1.8.0> ;
+    lg:packageName "backports-zstd" .
+
+pkg:bcrypt a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/bcrypt/5.0.0> ;
+    lg:packageName "bcrypt" .
+
+pkg:beautifulsoup4 a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/beautifulsoup4/4.15.0> ;
+    lg:packageName "beautifulsoup4" .
+
+pkg:beets a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/beets/2.14.1> ;
+    lg:packageName "beets" .
+
+pkg:billiard a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/billiard/4.3.2> ;
+    lg:packageName "billiard" .
+
+pkg:black a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/black/26.10.1> ;
+    lg:packageName "black" .
+
+pkg:blinker a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/blinker/1.9.0> ;
+    lg:packageName "blinker" .
+
+pkg:boto3 a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/boto3/1.43.123> ;
+    lg:packageName "boto3" .
+
+pkg:botocore a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/botocore/1.43.123> ;
+    lg:packageName "botocore" .
+
+pkg:brotli a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/brotli/1.2.1> ;
+    lg:packageName "brotli" .
+
+pkg:celery a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/celery/5.6.3> ;
+    lg:packageName "celery" .
+
+pkg:certifi a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/certifi/2026.10.23> ;
+    lg:packageName "certifi" .
+
+pkg:cffi a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/cffi/2.1.1> ;
+    lg:packageName "cffi" .
+
+pkg:charset-normalizer a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/charset-normalizer/3.5.2> ;
+    lg:packageName "charset-normalizer" .
+
+pkg:click a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/click/8.5.0> ;
+    lg:packageName "click" .
+
+pkg:click-didyoumean a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/click-didyoumean/0.3.1> ;
+    lg:packageName "click-didyoumean" .
+
+pkg:click-plugins a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/click-plugins/1.1.1.2> ;
+    lg:packageName "click-plugins" .
+
+pkg:click-repl a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/click-repl/0.4.1> ;
+    lg:packageName "click-repl" .
+
+pkg:cloudpickle a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/cloudpickle/3.1.2> ;
+    lg:packageName "cloudpickle" .
+
+pkg:confuse a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/confuse/2.3.1> ;
+    lg:packageName "confuse" .
+
+pkg:constantly a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/constantly/23.10.4> ;
+    lg:packageName "constantly" .
+
+pkg:contourpy a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/contourpy/1.4.0> ;
+    lg:packageName "contourpy" .
+
+pkg:cryptography a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/cryptography/50.0.2> ;
+    lg:packageName "cryptography" .
+
+pkg:cssselect a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/cssselect/1.6.0> ;
+    lg:packageName "cssselect" .
+
+pkg:cycler a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/cycler/0.12.1> ;
+    lg:packageName "cycler" .
+
+pkg:decorator a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/decorator/5.3.1> ;
+    lg:packageName "decorator" .
+
+pkg:defusedxml a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/defusedxml/0.7.1> ;
+    lg:packageName "defusedxml" .
+
+pkg:deprecated a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/deprecated/3.0.1> ;
+    lg:packageName "deprecated" .
+
+pkg:dill a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/dill/0.4.1> ;
+    lg:packageName "dill" .
+
+pkg:django a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/django/6.1.3> ;
+    lg:packageName "django" .
+
+pkg:docker a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/docker/7.2.0> ;
+    lg:packageName "docker" .
+
+pkg:docutils a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/docutils/0.23> ;
+    lg:packageName "docutils" .
+
+pkg:et-xmlfile a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/et-xmlfile/2.0.0> ;
+    lg:packageName "et-xmlfile" .
+
+pkg:fabric a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/fabric/3.2.3> ;
+    lg:packageName "fabric" .
+
+pkg:fastapi a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/fastapi/0.162.0> ;
+    lg:packageName "fastapi" .
+
+pkg:filelock a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/filelock/4.2.8> ;
+    lg:packageName "filelock" .
+
+pkg:filetype a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/filetype/1.2.0> ;
+    lg:packageName "filetype" .
+
+pkg:flask a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/flask/3.1.3> ;
+    lg:packageName "flask" .
+
+pkg:fonttools a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/fonttools/4.68.0> ;
+    lg:packageName "fonttools" .
+
+pkg:frozenlist a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/frozenlist/1.8.0> ;
+    lg:packageName "frozenlist" .
+
+pkg:h11 a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/h11/0.16.0> ;
+    lg:packageName "h11" .
+
+pkg:httpcore a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/httpcore/1.0.9> ;
+    lg:packageName "httpcore" .
+
+pkg:httpx a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/httpx/0.28.1> ;
+    lg:packageName "httpx" .
+
+pkg:hyperlink a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/hyperlink/21.0.0> ;
+    lg:packageName "hyperlink" .
+
+pkg:idna a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/idna/3.20> ;
+    lg:packageName "idna" .
+
+pkg:imagesize a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/imagesize/2.0.1> ;
+    lg:packageName "imagesize" .
+
+pkg:incremental a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/incremental/24.11.0> ;
+    lg:packageName "incremental" .
+
+pkg:iniconfig a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/iniconfig/2.3.1> ;
+    lg:packageName "iniconfig" .
+
+pkg:invoke a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/invoke/2.2.1>,
+        <http://example.org/licensegraph/ver/invoke/3.0.3> ;
+    lg:packageName "invoke" .
+
+pkg:isort a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/isort/9.0.2> ;
+    lg:packageName "isort" .
+
+pkg:itemadapter a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/itemadapter/0.14.0> ;
+    lg:packageName "itemadapter" .
+
+pkg:itemloaders a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/itemloaders/1.5.0> ;
+    lg:packageName "itemloaders" .
+
+pkg:itsdangerous a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/itsdangerous/2.2.0> ;
+    lg:packageName "itsdangerous" .
+
+pkg:jellyfish a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/jellyfish/1.3.0> ;
+    lg:packageName "jellyfish" .
+
+pkg:jinja2 a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/jinja2/3.1.6> ;
+    lg:packageName "jinja2" .
+
+pkg:jmespath a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/jmespath/1.1.0> ;
+    lg:packageName "jmespath" .
+
+pkg:joblib a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/joblib/1.6.0> ;
+    lg:packageName "joblib" .
+
+pkg:kiwisolver a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/kiwisolver/1.5.1> ;
+    lg:packageName "kiwisolver" .
+
+pkg:kombu a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/kombu/5.7.0> ;
+    lg:packageName "kombu" .
+
+pkg:lap a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/lap/0.5.14> ;
+    lg:packageName "lap" .
+
+pkg:ldap3 a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/ldap3/2.9.1> ;
+    lg:packageName "ldap3" .
+
+pkg:lxml a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/lxml/6.1.3> ;
+    lg:packageName "lxml" .
+
+pkg:markupsafe a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/markupsafe/3.0.4> ;
+    lg:packageName "markupsafe" .
+
+pkg:matplotlib a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/matplotlib/3.11.2> ;
+    lg:packageName "matplotlib" .
+
+pkg:mccabe a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/mccabe/0.7.0> ;
+    lg:packageName "mccabe" .
+
+pkg:mediafile a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/mediafile/0.17.0> ;
+    lg:packageName "mediafile" .
+
+pkg:multidict a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/multidict/7.2.1> ;
+    lg:packageName "multidict" .
+
+pkg:mutagen a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/mutagen/1.48.1> ;
+    lg:packageName "mutagen" .
+
+pkg:mypy-extensions a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/mypy-extensions/1.2.0> ;
+    lg:packageName "mypy-extensions" .
+
+pkg:mysql-connector-python a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/mysql-connector-python/26.10.0> ;
+    lg:packageName "mysql-connector-python" .
+
+pkg:narwhals a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/narwhals/2.28.0> ;
+    lg:packageName "narwhals" .
+
+pkg:numpy a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/numpy/2.5.4> ;
+    lg:packageName "numpy" .
+
+pkg:openpyxl a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/openpyxl/3.1.5> ;
+    lg:packageName "openpyxl" .
+
+pkg:opentelemetry-api a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/opentelemetry-api/1.45.2> ;
+    lg:packageName "opentelemetry-api" .
+
+pkg:outcome a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/outcome/1.3.0.post0> ;
+    lg:packageName "outcome" .
+
+pkg:packaging a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/packaging/26.3> ;
+    lg:packageName "packaging" .
+
+pkg:pandas a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pandas/3.1.0> ;
+    lg:packageName "pandas" .
+
+pkg:paramiko a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/paramiko/5.1.0> ;
+    lg:packageName "paramiko" .
+
+pkg:parsel a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/parsel/1.12.1> ;
+    lg:packageName "parsel" .
+
+pkg:pathspec a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pathspec/1.1.1> ;
+    lg:packageName "pathspec" .
+
+pkg:pillow a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pillow/13.0.0> ;
+    lg:packageName "pillow" .
+
+pkg:platformdirs a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/platformdirs/4.14.4> ;
+    lg:packageName "platformdirs" .
+
+pkg:pluggy a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pluggy/1.7.0> ;
+    lg:packageName "pluggy" .
+
+pkg:prompt-toolkit a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/prompt-toolkit/3.0.53> ;
+    lg:packageName "prompt-toolkit" .
+
+pkg:propcache a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/propcache/0.5.4> ;
+    lg:packageName "propcache" .
+
+pkg:protego a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/protego/0.7.0> ;
+    lg:packageName "protego" .
+
+pkg:psycopg a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/psycopg/3.3.8> ;
+    lg:packageName "psycopg" .
+
+pkg:psycopg2-binary a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/psycopg2-binary/2.9.13> ;
+    lg:packageName "psycopg2-binary" .
+
+pkg:pyasn1 a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pyasn1/0.6.5> ;
+    lg:packageName "pyasn1" .
+
+pkg:pycparser a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pycparser/3.12> ;
+    lg:packageName "pycparser" .
+
+pkg:pydantic a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pydantic/2.14.2> ;
+    lg:packageName "pydantic" .
+
+pkg:pydantic-core a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pydantic-core/2.50.2> ;
+    lg:packageName "pydantic-core" .
+
+pkg:pydispatcher a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pydispatcher/2.0.7> ;
+    lg:packageName "pydispatcher" .
+
+pkg:pygments a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pygments/2.21.0> ;
+    lg:packageName "pygments" .
+
+pkg:pyinstaller a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pyinstaller/6.22.3> ;
+    lg:packageName "pyinstaller" .
+
+pkg:pyinstaller-hooks-contrib a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pyinstaller-hooks-contrib/2026.9> ;
+    lg:packageName "pyinstaller-hooks-contrib" .
+
+pkg:pylint a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pylint/4.1.3> ;
+    lg:packageName "pylint" .
+
+pkg:pynacl a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pynacl/1.6.2> ;
+    lg:packageName "pynacl" .
+
+pkg:pyopenssl a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pyopenssl/26.4.0> ;
+    lg:packageName "pyopenssl" .
+
+pkg:pyparsing a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pyparsing/3.3.3> ;
+    lg:packageName "pyparsing" .
+
+pkg:pyrate-limiter a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pyrate-limiter/4.5.1> ;
+    lg:packageName "pyrate-limiter" .
+
+pkg:pysocks a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pysocks/1.7.1> ;
+    lg:packageName "pysocks" .
+
+pkg:pytest a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pytest/9.2.0> ;
+    lg:packageName "pytest" .
+
+pkg:pytest-pylint a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pytest-pylint/0.21.0> ;
+    lg:packageName "pytest-pylint" .
+
+pkg:python-dateutil a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/python-dateutil/2.9.0.post0>,
+        <http://example.org/licensegraph/ver/python-dateutil/4.0.0> ;
+    lg:packageName "python-dateutil" .
+
+pkg:python-slugify a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/python-slugify/9.1.3> ;
+    lg:packageName "python-slugify" .
+
+pkg:pytokens a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pytokens/0.4.1> ;
+    lg:packageName "pytokens" .
+
+pkg:pyyaml a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/pyyaml/6.0.3> ;
+    lg:packageName "pyyaml" .
+
+pkg:queuelib a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/queuelib/1.10.0> ;
+    lg:packageName "queuelib" .
+
+pkg:redis a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/redis/8.1.0> ;
+    lg:packageName "redis" .
+
+pkg:requests a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/requests/2.34.2> ;
+    lg:packageName "requests" .
+
+pkg:requests-file a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/requests-file/3.0.1> ;
+    lg:packageName "requests-file" .
+
+pkg:requests-ratelimiter a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/requests-ratelimiter/0.10.0> ;
+    lg:packageName "requests-ratelimiter" .
+
+pkg:resolvelib a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/resolvelib/1.2.1> ;
+    lg:packageName "resolvelib" .
+
+pkg:roman-numerals a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/roman-numerals/4.1.0> ;
+    lg:packageName "roman-numerals" .
+
+pkg:s3transfer a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/s3transfer/0.19.3> ;
+    lg:packageName "s3transfer" .
+
+pkg:scikit-learn a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/scikit-learn/1.9.1> ;
+    lg:packageName "scikit-learn" .
+
+pkg:scipy a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/scipy/1.18.1> ;
+    lg:packageName "scipy" .
+
+pkg:scrapy a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/scrapy/2.19.0> ;
+    lg:packageName "scrapy" .
+
+pkg:selenium a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/selenium/4.52.0> ;
+    lg:packageName "selenium" .
+
+pkg:service-identity a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/service-identity/26.1.0> ;
+    lg:packageName "service-identity" .
+
+pkg:setuptools a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/setuptools/84.2.1> ;
+    lg:packageName "setuptools" .
+
+pkg:six a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/six/1.17.0> ;
+    lg:packageName "six" .
+
+pkg:sniffio a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sniffio/1.3.1> ;
+    lg:packageName "sniffio" .
+
+pkg:snowballstemmer a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/snowballstemmer/3.1.1> ;
+    lg:packageName "snowballstemmer" .
+
+pkg:sortedcontainers a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sortedcontainers/2.4.0> ;
+    lg:packageName "sortedcontainers" .
+
+pkg:soupsieve a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/soupsieve/4.0> ;
+    lg:packageName "soupsieve" .
+
+pkg:sphinx a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sphinx/9.2.0> ;
+    lg:packageName "sphinx" .
+
+pkg:sphinxcontrib-applehelp a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sphinxcontrib-applehelp/2.0.0> ;
+    lg:packageName "sphinxcontrib-applehelp" .
+
+pkg:sphinxcontrib-devhelp a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sphinxcontrib-devhelp/2.0.0> ;
+    lg:packageName "sphinxcontrib-devhelp" .
+
+pkg:sphinxcontrib-htmlhelp a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sphinxcontrib-htmlhelp/2.1.0> ;
+    lg:packageName "sphinxcontrib-htmlhelp" .
+
+pkg:sphinxcontrib-jsmath a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sphinxcontrib-jsmath/2.0.0> ;
+    lg:packageName "sphinxcontrib-jsmath" .
+
+pkg:sphinxcontrib-qthelp a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sphinxcontrib-qthelp/2.0.0> ;
+    lg:packageName "sphinxcontrib-qthelp" .
+
+pkg:sphinxcontrib-serializinghtml a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sphinxcontrib-serializinghtml/2.0.0> ;
+    lg:packageName "sphinxcontrib-serializinghtml" .
+
+pkg:sqlalchemy a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sqlalchemy/2.1.8> ;
+    lg:packageName "sqlalchemy" .
+
+pkg:sqlparse a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/sqlparse/0.6.1> ;
+    lg:packageName "sqlparse" .
+
+pkg:starlette a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/starlette/1.10.0> ;
+    lg:packageName "starlette" .
+
+pkg:text-unidecode a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/text-unidecode/1.3> ;
+    lg:packageName "text-unidecode" .
+
+pkg:threadpoolctl a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/threadpoolctl/3.7.0> ;
+    lg:packageName "threadpoolctl" .
+
+pkg:tldextract a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/tldextract/5.4.0> ;
+    lg:packageName "tldextract" .
+
+pkg:tomlkit a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/tomlkit/0.15.2> ;
+    lg:packageName "tomlkit" .
+
+pkg:trio a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/trio/0.35.0> ;
+    lg:packageName "trio" .
+
+pkg:trio-websocket a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/trio-websocket/0.12.2> ;
+    lg:packageName "trio-websocket" .
+
+pkg:twisted a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/twisted/26.10.0> ;
+    lg:packageName "twisted" .
+
+pkg:typing-extensions a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/typing-extensions/4.16.0> ;
+    lg:packageName "typing-extensions" .
+
+pkg:typing-inspection a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/typing-inspection/0.4.4> ;
+    lg:packageName "typing-inspection" .
+
+pkg:tzdata a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/tzdata/2026.6> ;
+    lg:packageName "tzdata" .
+
+pkg:tzlocal a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/tzlocal/5.4.5> ;
+    lg:packageName "tzlocal" .
+
+pkg:unidecode a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/unidecode/1.4.0> ;
+    lg:packageName "unidecode" .
+
+pkg:urllib3 a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/urllib3/2.8.0> ;
+    lg:packageName "urllib3" .
+
+pkg:uvicorn a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/uvicorn/0.54.0> ;
+    lg:packageName "uvicorn" .
+
+pkg:vine a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/vine/5.1.0> ;
+    lg:packageName "vine" .
+
+pkg:w3lib a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/w3lib/2.5.0> ;
+    lg:packageName "w3lib" .
+
+pkg:wcwidth a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/wcwidth/0.9.4> ;
+    lg:packageName "wcwidth" .
+
+pkg:websocket-client a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/websocket-client/1.9.2> ;
+    lg:packageName "websocket-client" .
+
+pkg:werkzeug a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/werkzeug/3.1.9> ;
+    lg:packageName "werkzeug" .
+
+pkg:wrapt a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/wrapt/2.5.2> ;
+    lg:packageName "wrapt" .
+
+pkg:wsproto a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/wsproto/1.3.2> ;
+    lg:packageName "wsproto" .
+
+pkg:yarl a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/yarl/1.25.1> ;
+    lg:packageName "yarl" .
+
+pkg:zope-interface a lg:Package ;
+    lg:hasVersion <http://example.org/licensegraph/ver/zope-interface/8.7> ;
+    lg:packageName "zope-interface" .
+
+project:acme-apache-app a lg:Project ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/fabric/3.2.3>,
+        <http://example.org/licensegraph/ver/ldap3/2.9.1>,
+        <http://example.org/licensegraph/ver/pandas/3.1.0>,
+        <http://example.org/licensegraph/ver/python-slugify/9.1.3>,
+        <http://example.org/licensegraph/ver/sphinx/9.2.0> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:packageName "acme-apache-app" ;
+    lg:projectName "acme-apache-app" .
+
+project:acme-gpl3-app a lg:Project ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/ansible-core/2.22.0>,
+        <http://example.org/licensegraph/ver/requests/2.34.2>,
+        <http://example.org/licensegraph/ver/sphinx/9.2.0> ;
+    lg:hasLicense license:GPL-3.0-only ;
+    lg:packageName "acme-gpl3-app" ;
+    lg:projectName "acme-gpl3-app" .
+
+project:acme-mit-app a lg:Project ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/beets/2.14.1>,
+        <http://example.org/licensegraph/ver/flask/3.1.3>,
+        <http://example.org/licensegraph/ver/pytest-pylint/0.21.0>,
+        <http://example.org/licensegraph/ver/requests/2.34.2> ;
+    lg:hasLicense license:MIT ;
+    lg:packageName "acme-mit-app" ;
+    lg:projectName "acme-mit-app" .
+
+project:acme-proprietary-app a lg:Project ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/paramiko/5.1.0>,
+        <http://example.org/licensegraph/ver/psycopg2-binary/2.9.13>,
+        <http://example.org/licensegraph/ver/requests/2.34.2>,
+        <http://example.org/licensegraph/ver/scrapy/2.19.0> ;
+    lg:hasLicense license:LicenseRef-Proprietary ;
+    lg:packageName "acme-proprietary-app" ;
+    lg:projectName "acme-proprietary-app" .
+
+license:Artistic-2.0 a lg:PermissiveLicense ;
+    rdfs:label "Artistic License 2.0" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "Artistic-2.0" .
+
+license:GPL-2.0-only a lg:StrongCopyleftLicense ;
+    rdfs:label "GNU General Public License v2.0 only" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "GPL-2.0-only" .
+
+license:GPL-3.0-only a lg:StrongCopyleftLicense ;
+    rdfs:label "GNU General Public License v3.0 only" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "GPL-3.0-only" .
+
+license:ISC a lg:PermissiveLicense ;
+    rdfs:label "ISC License" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "ISC" .
+
+license:LGPL-2.1 a lg:WeakCopyleftLicense ;
+    rdfs:label "GNU Lesser General Public License v2.1 only" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "LGPL-2.1" .
+
+license:LicenseRef-Proprietary a lg:ProprietaryLicense ;
+    rdfs:label "LicenseRef-Proprietary" ;
+    lg:spdxId "LicenseRef-Proprietary" .
+
+license:LicenseRef-Public-Domain a lg:PublicDomainLicense ;
+    rdfs:label "LicenseRef-Public-Domain" ;
+    lg:spdxId "LicenseRef-Public-Domain" .
+
+license:MIT-0 a lg:PermissiveLicense ;
+    rdfs:label "MIT No Attribution" ;
+    lg:isOsiApproved true ;
+    lg:spdxId "MIT-0" .
+
+license:MIT-CMU a lg:PermissiveLicense ;
+    rdfs:label "CMU License" ;
+    lg:isOsiApproved false ;
+    lg:spdxId "MIT-CMU" .
+
+license:ZPL-2.1 a lg:PermissiveLicense ;
+    rdfs:label "Zope Public License 2.1" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "ZPL-2.1" .
+
+license:Zlib a lg:PermissiveLicense ;
+    rdfs:label "zlib License" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "Zlib" .
+
+<http://example.org/licensegraph/ver/ansible/14.5.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "GPL-3.0-or-later" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/ansible-core/2.21.6> ;
+    lg:hasLicense license:GPL-3.0-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "14.5.0" .
+
+<http://example.org/licensegraph/ver/beautifulsoup4/4.15.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/soupsieve/4.0>,
+        <http://example.org/licensegraph/ver/typing-extensions/4.16.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "4.15.0" .
+
+<http://example.org/licensegraph/ver/black/26.10.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/click/8.5.0>,
+        <http://example.org/licensegraph/ver/mypy-extensions/1.2.0>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/pathspec/1.1.1>,
+        <http://example.org/licensegraph/ver/platformdirs/4.14.4>,
+        <http://example.org/licensegraph/ver/pytokens/0.4.1> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "26.10.1" .
+
+<http://example.org/licensegraph/ver/boto3/1.43.123> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/botocore/1.43.123>,
+        <http://example.org/licensegraph/ver/jmespath/1.1.0>,
+        <http://example.org/licensegraph/ver/s3transfer/0.19.3> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.43.123" .
+
+<http://example.org/licensegraph/ver/celery/5.6.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/billiard/4.3.2>,
+        <http://example.org/licensegraph/ver/click-didyoumean/0.3.1>,
+        <http://example.org/licensegraph/ver/click-plugins/1.1.1.2>,
+        <http://example.org/licensegraph/ver/click-repl/0.4.1>,
+        <http://example.org/licensegraph/ver/click/8.5.0>,
+        <http://example.org/licensegraph/ver/kombu/5.7.0>,
+        <http://example.org/licensegraph/ver/python-dateutil/4.0.0>,
+        <http://example.org/licensegraph/ver/tzlocal/5.4.5>,
+        <http://example.org/licensegraph/ver/vine/5.1.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "5.6.3" .
+
+<http://example.org/licensegraph/ver/django/6.1.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/asgiref/3.13.0>,
+        <http://example.org/licensegraph/ver/sqlparse/0.6.1> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "6.1.3" .
+
+<http://example.org/licensegraph/ver/docker/7.2.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/requests/2.34.2>,
+        <http://example.org/licensegraph/ver/urllib3/2.8.0> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "7.2.0" .
+
+<http://example.org/licensegraph/ver/fastapi/0.162.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/annotated-doc/0.0.5>,
+        <http://example.org/licensegraph/ver/opentelemetry-api/1.45.2>,
+        <http://example.org/licensegraph/ver/pydantic/2.14.2>,
+        <http://example.org/licensegraph/ver/starlette/1.10.0>,
+        <http://example.org/licensegraph/ver/typing-extensions/4.16.0>,
+        <http://example.org/licensegraph/ver/typing-inspection/0.4.4> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.162.0" .
+
+<http://example.org/licensegraph/ver/httpx/0.28.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/anyio/4.16.0>,
+        <http://example.org/licensegraph/ver/certifi/2026.10.23>,
+        <http://example.org/licensegraph/ver/httpcore/1.0.9>,
+        <http://example.org/licensegraph/ver/idna/3.20> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.28.1" .
+
+<http://example.org/licensegraph/ver/matplotlib/3.11.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "PSF-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/contourpy/1.4.0>,
+        <http://example.org/licensegraph/ver/cycler/0.12.1>,
+        <http://example.org/licensegraph/ver/fonttools/4.68.0>,
+        <http://example.org/licensegraph/ver/kiwisolver/1.5.1>,
+        <http://example.org/licensegraph/ver/numpy/2.5.4>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/pillow/13.0.0>,
+        <http://example.org/licensegraph/ver/pyparsing/3.3.3>,
+        <http://example.org/licensegraph/ver/python-dateutil/4.0.0> ;
+    lg:hasLicense license:PSF-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "3.11.2" .
+
+<http://example.org/licensegraph/ver/mysql-connector-python/26.10.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "GPL-2.0-or-later" ;
+    lg:hasLicense license:GPL-2.0-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "26.10.0" .
+
+<http://example.org/licensegraph/ver/openpyxl/3.1.5> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/et-xmlfile/2.0.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "3.1.5" .
+
+<http://example.org/licensegraph/ver/psycopg/3.3.8> a lg:PackageVersion ;
+    lg:declaredLicenseString "LGPL-3.0-only" ;
+    lg:hasLicense license:LGPL-3.0-only ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.3.8" .
+
+<http://example.org/licensegraph/ver/pyinstaller/6.22.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "GPL-2.0-or-later WITH Bootloader-exception" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/altgraph/0.17.5>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/pyinstaller-hooks-contrib/2026.9>,
+        <http://example.org/licensegraph/ver/setuptools/84.2.1> ;
+    lg:hasLicense license:GPL-2.0-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "manual_override" ;
+    lg:versionString "6.22.3" .
+
+<http://example.org/licensegraph/ver/pysocks/1.7.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "manual_override" ;
+    lg:versionString "1.7.1" .
+
+<http://example.org/licensegraph/ver/redis/8.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "8.1.0" .
+
+<http://example.org/licensegraph/ver/scikit-learn/1.9.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/joblib/1.6.0>,
+        <http://example.org/licensegraph/ver/narwhals/2.28.0>,
+        <http://example.org/licensegraph/ver/numpy/2.5.4>,
+        <http://example.org/licensegraph/ver/scipy/1.18.1>,
+        <http://example.org/licensegraph/ver/threadpoolctl/3.7.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.9.1" .
+
+<http://example.org/licensegraph/ver/selenium/4.52.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/certifi/2026.10.23>,
+        <http://example.org/licensegraph/ver/trio-websocket/0.12.2>,
+        <http://example.org/licensegraph/ver/trio/0.35.0>,
+        <http://example.org/licensegraph/ver/typing-extensions/4.16.0>,
+        <http://example.org/licensegraph/ver/urllib3/2.8.0>,
+        <http://example.org/licensegraph/ver/websocket-client/1.9.2> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "4.52.0" .
+
+<http://example.org/licensegraph/ver/sqlalchemy/2.1.8> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/typing-extensions/4.16.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.1.8" .
+
+<http://example.org/licensegraph/ver/uvicorn/0.54.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/click/8.5.0>,
+        <http://example.org/licensegraph/ver/h11/0.16.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.54.0" .
+
+license:0BSD a lg:PermissiveLicense ;
+    rdfs:label "BSD Zero Clause License" ;
+    lg:isOsiApproved true ;
+    lg:spdxId "0BSD" .
+
+license:CC0-1.0 a lg:PublicDomainLicense ;
+    rdfs:label "Creative Commons Zero v1.0 Universal" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved false ;
+    lg:spdxId "CC0-1.0" .
+
+license:LGPL-2.1-or-later a lg:WeakCopyleftLicense ;
+    rdfs:label "GNU Lesser General Public License v2.1 or later" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "LGPL-2.1-or-later" .
+
+license:LGPL-3.0-only a lg:WeakCopyleftLicense ;
+    rdfs:label "GNU Lesser General Public License v3.0 only" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "LGPL-3.0-only" .
+
+license:MPL-2.0 a lg:WeakCopyleftLicense ;
+    rdfs:label "Mozilla Public License 2.0" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "MPL-2.0" .
+
+<http://example.org/licensegraph/ver/aiohappyeyeballs/2.7.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "PSF-2.0" ;
+    lg:hasLicense license:PSF-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "2.7.1" .
+
+<http://example.org/licensegraph/ver/aiohttp/3.14.5> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0 AND MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/aiohappyeyeballs/2.7.1>,
+        <http://example.org/licensegraph/ver/aiosignal/1.4.0>,
+        <http://example.org/licensegraph/ver/attrs/26.1.0>,
+        <http://example.org/licensegraph/ver/frozenlist/1.8.0>,
+        <http://example.org/licensegraph/ver/multidict/7.2.1>,
+        <http://example.org/licensegraph/ver/propcache/0.5.4>,
+        <http://example.org/licensegraph/ver/yarl/1.25.1> ;
+    lg:hasLicense license:Apache-2.0,
+        license:MIT ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.14.5" .
+
+<http://example.org/licensegraph/ver/aiosignal/1.4.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/frozenlist/1.8.0> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.4.0" .
+
+<http://example.org/licensegraph/ver/alabaster/1.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.0.0" .
+
+<http://example.org/licensegraph/ver/altgraph/0.17.5> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.17.5" .
+
+<http://example.org/licensegraph/ver/amqp/5.4.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/vine/5.1.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "5.4.2" .
+
+<http://example.org/licensegraph/ver/annotated-doc/0.0.5> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.0.5" .
+
+<http://example.org/licensegraph/ver/annotated-types/0.8.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.8.0" .
+
+<http://example.org/licensegraph/ver/ansible-core/2.21.6> a lg:PackageVersion ;
+    lg:declaredLicenseString "GPL-3.0-or-later" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/cryptography/50.0.2>,
+        <http://example.org/licensegraph/ver/jinja2/3.1.6>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/pyyaml/6.0.3>,
+        <http://example.org/licensegraph/ver/resolvelib/1.2.1> ;
+    lg:hasLicense license:GPL-3.0-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.21.6" .
+
+<http://example.org/licensegraph/ver/ansible-core/2.22.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "GPL-3.0-or-later" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/cryptography/50.0.2>,
+        <http://example.org/licensegraph/ver/jinja2/3.1.6>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/pyyaml/6.0.3>,
+        <http://example.org/licensegraph/ver/resolvelib/1.2.1> ;
+    lg:hasLicense license:GPL-3.0-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.22.0" .
+
+<http://example.org/licensegraph/ver/asgiref/3.13.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "3.13.0" .
+
+<http://example.org/licensegraph/ver/astroid/4.3.4> a lg:PackageVersion ;
+    lg:declaredLicenseString "LGPL-2.1-or-later" ;
+    lg:hasLicense license:LGPL-2.1-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.3.4" .
+
+<http://example.org/licensegraph/ver/automat/25.4.16> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "25.4.16" .
+
+<http://example.org/licensegraph/ver/babel/2.18.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "2.18.0" .
+
+<http://example.org/licensegraph/ver/backports-zstd/1.8.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "PSF-2.0" ;
+    lg:hasLicense license:PSF-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.8.0" .
+
+<http://example.org/licensegraph/ver/bcrypt/5.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "5.0.0" .
+
+<http://example.org/licensegraph/ver/beets/2.14.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/confuse/2.3.1>,
+        <http://example.org/licensegraph/ver/jellyfish/1.3.0>,
+        <http://example.org/licensegraph/ver/lap/0.5.14>,
+        <http://example.org/licensegraph/ver/mediafile/0.17.0>,
+        <http://example.org/licensegraph/ver/numpy/2.5.4>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/platformdirs/4.14.4>,
+        <http://example.org/licensegraph/ver/pyyaml/6.0.3>,
+        <http://example.org/licensegraph/ver/requests-ratelimiter/0.10.0>,
+        <http://example.org/licensegraph/ver/requests/2.34.2>,
+        <http://example.org/licensegraph/ver/typing-extensions/4.16.0>,
+        <http://example.org/licensegraph/ver/unidecode/1.4.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "2.14.1" .
+
+<http://example.org/licensegraph/ver/billiard/4.3.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "4.3.2" .
+
+<http://example.org/licensegraph/ver/blinker/1.9.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.9.0" .
+
+<http://example.org/licensegraph/ver/brotli/1.2.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.2.1" .
+
+<http://example.org/licensegraph/ver/click-didyoumean/0.3.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/click/8.5.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.3.1" .
+
+<http://example.org/licensegraph/ver/click-plugins/1.1.1.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/click/8.5.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.1.1.2" .
+
+<http://example.org/licensegraph/ver/click-repl/0.4.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/click/8.5.0>,
+        <http://example.org/licensegraph/ver/prompt-toolkit/3.0.53>,
+        <http://example.org/licensegraph/ver/typing-extensions/4.16.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.4.1" .
+
+<http://example.org/licensegraph/ver/cloudpickle/3.1.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "3.1.2" .
+
+<http://example.org/licensegraph/ver/confuse/2.3.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/pyyaml/6.0.3> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.3.1" .
+
+<http://example.org/licensegraph/ver/constantly/23.10.4> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "23.10.4" .
+
+<http://example.org/licensegraph/ver/contourpy/1.4.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/numpy/2.5.4> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.4.0" .
+
+<http://example.org/licensegraph/ver/cycler/0.12.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.12.1" .
+
+<http://example.org/licensegraph/ver/decorator/5.3.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-2-Clause" ;
+    lg:hasLicense license:BSD-2-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "5.3.1" .
+
+<http://example.org/licensegraph/ver/defusedxml/0.7.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "PSF-2.0" ;
+    lg:hasLicense license:PSF-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.7.1" .
+
+<http://example.org/licensegraph/ver/deprecated/3.0.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/wrapt/2.5.2> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.0.1" .
+
+<http://example.org/licensegraph/ver/dill/0.4.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.4.1" .
+
+<http://example.org/licensegraph/ver/docutils/0.23> a lg:PackageVersion ;
+    lg:declaredLicenseString "LicenseRef-Public-Domain OR BSD-3-Clause OR GPL-2.0-or-later" ;
+    lg:hasLicense license:BSD-3-Clause,
+        license:GPL-2.0-or-later,
+        license:LicenseRef-Public-Domain ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.23" .
+
+<http://example.org/licensegraph/ver/et-xmlfile/2.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "2.0.0" .
+
+<http://example.org/licensegraph/ver/fabric/3.2.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/decorator/5.3.1>,
+        <http://example.org/licensegraph/ver/deprecated/3.0.1>,
+        <http://example.org/licensegraph/ver/invoke/2.2.1>,
+        <http://example.org/licensegraph/ver/paramiko/5.1.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "3.2.3" .
+
+<http://example.org/licensegraph/ver/filelock/4.2.8> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.2.8" .
+
+<http://example.org/licensegraph/ver/filetype/1.2.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.2.0" .
+
+<http://example.org/licensegraph/ver/flask/3.1.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/blinker/1.9.0>,
+        <http://example.org/licensegraph/ver/click/8.5.0>,
+        <http://example.org/licensegraph/ver/itsdangerous/2.2.0>,
+        <http://example.org/licensegraph/ver/jinja2/3.1.6>,
+        <http://example.org/licensegraph/ver/markupsafe/3.0.4>,
+        <http://example.org/licensegraph/ver/werkzeug/3.1.9> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.1.3" .
+
+<http://example.org/licensegraph/ver/fonttools/4.68.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "4.68.0" .
+
+<http://example.org/licensegraph/ver/httpcore/1.0.9> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/certifi/2026.10.23>,
+        <http://example.org/licensegraph/ver/h11/0.16.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.0.9" .
+
+<http://example.org/licensegraph/ver/hyperlink/21.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/idna/3.20> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "21.0.0" .
+
+<http://example.org/licensegraph/ver/imagesize/2.0.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.0.1" .
+
+<http://example.org/licensegraph/ver/incremental/24.11.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/packaging/26.3> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "24.11.0" .
+
+<http://example.org/licensegraph/ver/iniconfig/2.3.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.3.1" .
+
+<http://example.org/licensegraph/ver/invoke/3.0.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-2-Clause" ;
+    lg:hasLicense license:BSD-2-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.0.3" .
+
+<http://example.org/licensegraph/ver/isort/9.0.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/mypy-extensions/1.2.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "9.0.2" .
+
+<http://example.org/licensegraph/ver/itemloaders/1.5.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/itemadapter/0.14.0>,
+        <http://example.org/licensegraph/ver/jmespath/1.1.0>,
+        <http://example.org/licensegraph/ver/parsel/1.12.1> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.5.0" .
+
+<http://example.org/licensegraph/ver/itsdangerous/2.2.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.2.0" .
+
+<http://example.org/licensegraph/ver/jellyfish/1.3.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.3.0" .
+
+<http://example.org/licensegraph/ver/joblib/1.6.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/cloudpickle/3.1.2> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.6.0" .
+
+<http://example.org/licensegraph/ver/kiwisolver/1.5.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.5.1" .
+
+<http://example.org/licensegraph/ver/kombu/5.7.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/amqp/5.4.2>,
+        <http://example.org/licensegraph/ver/vine/5.1.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "5.7.0" .
+
+<http://example.org/licensegraph/ver/lap/0.5.14> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-2-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/numpy/2.5.4> ;
+    lg:hasLicense license:BSD-2-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.5.14" .
+
+<http://example.org/licensegraph/ver/ldap3/2.9.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "LGPL-3.0-only" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/pyasn1/0.6.5> ;
+    lg:hasLicense license:LGPL-3.0-only ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.9.1" .
+
+<http://example.org/licensegraph/ver/mccabe/0.7.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.7.0" .
+
+<http://example.org/licensegraph/ver/mediafile/0.17.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/filetype/1.2.0>,
+        <http://example.org/licensegraph/ver/mutagen/1.48.1> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.17.0" .
+
+<http://example.org/licensegraph/ver/mutagen/1.48.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "GPL-2.0-or-later" ;
+    lg:hasLicense license:GPL-2.0-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.48.1" .
+
+<http://example.org/licensegraph/ver/narwhals/2.28.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.28.0" .
+
+<http://example.org/licensegraph/ver/opentelemetry-api/1.45.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/typing-extensions/4.16.0> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.45.2" .
+
+<http://example.org/licensegraph/ver/pandas/3.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/numpy/2.5.4>,
+        <http://example.org/licensegraph/ver/python-dateutil/4.0.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.1.0" .
+
+<http://example.org/licensegraph/ver/pathspec/1.1.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MPL-2.0" ;
+    lg:hasLicense license:MPL-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.1.1" .
+
+<http://example.org/licensegraph/ver/pillow/13.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT-CMU" ;
+    lg:hasLicense license:MIT-CMU ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "13.0.0" .
+
+<http://example.org/licensegraph/ver/pluggy/1.7.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.7.0" .
+
+<http://example.org/licensegraph/ver/prompt-toolkit/3.0.53> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/wcwidth/0.9.4> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "3.0.53" .
+
+<http://example.org/licensegraph/ver/protego/0.7.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.7.0" .
+
+<http://example.org/licensegraph/ver/psycopg2-binary/2.9.13> a lg:PackageVersion ;
+    lg:declaredLicenseString "LGPL-2.1-or-later" ;
+    lg:hasLicense license:LGPL-2.1-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.9.13" .
+
+<http://example.org/licensegraph/ver/pyasn1/0.6.5> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-2-Clause" ;
+    lg:hasLicense license:BSD-2-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.6.5" .
+
+<http://example.org/licensegraph/ver/pycparser/3.12> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.12" .
+
+<http://example.org/licensegraph/ver/pydantic-core/2.50.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/typing-extensions/4.16.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.50.2" .
+
+<http://example.org/licensegraph/ver/pydantic/2.14.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/annotated-types/0.8.0>,
+        <http://example.org/licensegraph/ver/pydantic-core/2.50.2>,
+        <http://example.org/licensegraph/ver/typing-extensions/4.16.0>,
+        <http://example.org/licensegraph/ver/typing-inspection/0.4.4> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.14.2" .
+
+<http://example.org/licensegraph/ver/pydispatcher/2.0.7> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.0.7" .
+
+<http://example.org/licensegraph/ver/pyinstaller-hooks-contrib/2026.9> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0 OR GPL-2.0-only" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/packaging/26.3> ;
+    lg:hasLicense license:Apache-2.0,
+        license:GPL-2.0-only ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2026.9" .
+
+<http://example.org/licensegraph/ver/pylint/4.1.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "GPL-2.0-or-later" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/astroid/4.3.4>,
+        <http://example.org/licensegraph/ver/dill/0.4.1>,
+        <http://example.org/licensegraph/ver/isort/9.0.2>,
+        <http://example.org/licensegraph/ver/mccabe/0.7.0>,
+        <http://example.org/licensegraph/ver/platformdirs/4.14.4>,
+        <http://example.org/licensegraph/ver/tomlkit/0.15.2> ;
+    lg:hasLicense license:GPL-2.0-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.1.3" .
+
+<http://example.org/licensegraph/ver/pynacl/1.6.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/cffi/2.1.1> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.6.2" .
+
+<http://example.org/licensegraph/ver/pyopenssl/26.4.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/cryptography/50.0.2> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "26.4.0" .
+
+<http://example.org/licensegraph/ver/pyparsing/3.3.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.3.3" .
+
+<http://example.org/licensegraph/ver/pyrate-limiter/4.5.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.5.1" .
+
+<http://example.org/licensegraph/ver/pytest-pylint/0.21.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/pylint/4.1.3>,
+        <http://example.org/licensegraph/ver/pytest/9.2.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.21.0" .
+
+<http://example.org/licensegraph/ver/pytest/9.2.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/iniconfig/2.3.1>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/pluggy/1.7.0>,
+        <http://example.org/licensegraph/ver/pygments/2.21.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "9.2.0" .
+
+<http://example.org/licensegraph/ver/python-dateutil/2.9.0.post0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause OR Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/six/1.17.0> ;
+    lg:hasLicense license:Apache-2.0,
+        license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.9.0.post0" .
+
+<http://example.org/licensegraph/ver/python-slugify/9.1.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/text-unidecode/1.3> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "9.1.3" .
+
+<http://example.org/licensegraph/ver/pytokens/0.4.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.4.1" .
+
+<http://example.org/licensegraph/ver/queuelib/1.10.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.10.0" .
+
+<http://example.org/licensegraph/ver/requests-file/3.0.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/requests/2.34.2> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "3.0.1" .
+
+<http://example.org/licensegraph/ver/requests-ratelimiter/0.10.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/pyrate-limiter/4.5.1>,
+        <http://example.org/licensegraph/ver/requests/2.34.2> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.10.0" .
+
+<http://example.org/licensegraph/ver/roman-numerals/4.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "0BSD OR CC0-1.0" ;
+    lg:hasLicense license:0BSD,
+        license:CC0-1.0 ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.1.0" .
+
+<http://example.org/licensegraph/ver/s3transfer/0.19.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/botocore/1.43.123> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.19.3" .
+
+<http://example.org/licensegraph/ver/scipy/1.18.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/numpy/2.5.4> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.18.1" .
+
+<http://example.org/licensegraph/ver/scrapy/2.19.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/aiohttp/3.14.5>,
+        <http://example.org/licensegraph/ver/backports-zstd/1.8.0>,
+        <http://example.org/licensegraph/ver/brotli/1.2.1>,
+        <http://example.org/licensegraph/ver/charset-normalizer/3.5.2>,
+        <http://example.org/licensegraph/ver/cryptography/50.0.2>,
+        <http://example.org/licensegraph/ver/cssselect/1.6.0>,
+        <http://example.org/licensegraph/ver/defusedxml/0.7.1>,
+        <http://example.org/licensegraph/ver/itemadapter/0.14.0>,
+        <http://example.org/licensegraph/ver/itemloaders/1.5.0>,
+        <http://example.org/licensegraph/ver/lxml/6.1.3>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/parsel/1.12.1>,
+        <http://example.org/licensegraph/ver/platformdirs/4.14.4>,
+        <http://example.org/licensegraph/ver/protego/0.7.0>,
+        <http://example.org/licensegraph/ver/pydispatcher/2.0.7>,
+        <http://example.org/licensegraph/ver/pyopenssl/26.4.0>,
+        <http://example.org/licensegraph/ver/queuelib/1.10.0>,
+        <http://example.org/licensegraph/ver/service-identity/26.1.0>,
+        <http://example.org/licensegraph/ver/tldextract/5.4.0>,
+        <http://example.org/licensegraph/ver/twisted/26.10.0>,
+        <http://example.org/licensegraph/ver/w3lib/2.5.0>,
+        <http://example.org/licensegraph/ver/zope-interface/8.7> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.19.0" .
+
+<http://example.org/licensegraph/ver/service-identity/26.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/attrs/26.1.0>,
+        <http://example.org/licensegraph/ver/cryptography/50.0.2> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "26.1.0" .
+
+<http://example.org/licensegraph/ver/setuptools/84.2.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "84.2.1" .
+
+<http://example.org/licensegraph/ver/six/1.17.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.17.0" .
+
+<http://example.org/licensegraph/ver/sniffio/1.3.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT OR Apache-2.0" ;
+    lg:hasLicense license:Apache-2.0,
+        license:MIT ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.3.1" .
+
+<http://example.org/licensegraph/ver/snowballstemmer/3.1.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "3.1.1" .
+
+<http://example.org/licensegraph/ver/sortedcontainers/2.4.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "2.4.0" .
+
+<http://example.org/licensegraph/ver/soupsieve/4.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.0" .
+
+<http://example.org/licensegraph/ver/sphinxcontrib-applehelp/2.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.0.0" .
+
+<http://example.org/licensegraph/ver/sphinxcontrib-devhelp/2.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.0.0" .
+
+<http://example.org/licensegraph/ver/sphinxcontrib-htmlhelp/2.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.1.0" .
+
+<http://example.org/licensegraph/ver/sphinxcontrib-jsmath/2.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.0.0" .
+
+<http://example.org/licensegraph/ver/sphinxcontrib-qthelp/2.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.0.0" .
+
+<http://example.org/licensegraph/ver/sphinxcontrib-serializinghtml/2.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.0.0" .
+
+<http://example.org/licensegraph/ver/sqlparse/0.6.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.6.1" .
+
+<http://example.org/licensegraph/ver/starlette/1.10.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/anyio/4.16.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.10.0" .
+
+<http://example.org/licensegraph/ver/text-unidecode/1.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "Artistic-2.0 OR GPL-2.0-or-later" ;
+    lg:hasLicense license:Artistic-2.0,
+        license:GPL-2.0-or-later ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.3" .
+
+<http://example.org/licensegraph/ver/threadpoolctl/3.7.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.7.0" .
+
+<http://example.org/licensegraph/ver/tldextract/5.4.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/filelock/4.2.8>,
+        <http://example.org/licensegraph/ver/idna/3.20>,
+        <http://example.org/licensegraph/ver/requests-file/3.0.1>,
+        <http://example.org/licensegraph/ver/requests/2.34.2> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "5.4.0" .
+
+<http://example.org/licensegraph/ver/tomlkit/0.15.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.15.2" .
+
+<http://example.org/licensegraph/ver/trio-websocket/0.12.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/outcome/1.3.0.post0>,
+        <http://example.org/licensegraph/ver/trio/0.35.0>,
+        <http://example.org/licensegraph/ver/wsproto/1.3.2> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.12.2" .
+
+<http://example.org/licensegraph/ver/twisted/26.10.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/attrs/26.1.0>,
+        <http://example.org/licensegraph/ver/automat/25.4.16>,
+        <http://example.org/licensegraph/ver/constantly/23.10.4>,
+        <http://example.org/licensegraph/ver/hyperlink/21.0.0>,
+        <http://example.org/licensegraph/ver/incremental/24.11.0>,
+        <http://example.org/licensegraph/ver/typing-extensions/4.16.0>,
+        <http://example.org/licensegraph/ver/zope-interface/8.7> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "26.10.0" .
+
+<http://example.org/licensegraph/ver/tzdata/2026.6> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "2026.6" .
+
+<http://example.org/licensegraph/ver/tzlocal/5.4.5> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "5.4.5" .
+
+<http://example.org/licensegraph/ver/unidecode/1.4.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "GPL-2.0-or-later" ;
+    lg:hasLicense license:GPL-2.0-or-later ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.4.0" .
+
+<http://example.org/licensegraph/ver/wcwidth/0.9.4> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "0.9.4" .
+
+<http://example.org/licensegraph/ver/websocket-client/1.9.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.9.2" .
+
+<http://example.org/licensegraph/ver/werkzeug/3.1.9> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/markupsafe/3.0.4> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.1.9" .
+
+<http://example.org/licensegraph/ver/wrapt/2.5.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-2-Clause" ;
+    lg:hasLicense license:BSD-2-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.5.2" .
+
+<http://example.org/licensegraph/ver/wsproto/1.3.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/h11/0.16.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.3.2" .
+
+<http://example.org/licensegraph/ver/yarl/1.25.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/idna/3.20>,
+        <http://example.org/licensegraph/ver/multidict/7.2.1>,
+        <http://example.org/licensegraph/ver/propcache/0.5.4> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.25.1" .
+
+license:GPL-3.0-or-later a lg:StrongCopyleftLicense ;
+    rdfs:label "GNU General Public License v3.0 or later" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "GPL-3.0-or-later" .
+
+<http://example.org/licensegraph/ver/anyio/4.16.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/idna/3.20>,
+        <http://example.org/licensegraph/ver/typing-extensions/4.16.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.16.0" .
+
+<http://example.org/licensegraph/ver/botocore/1.43.123> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/jmespath/1.1.0>,
+        <http://example.org/licensegraph/ver/python-dateutil/2.9.0.post0>,
+        <http://example.org/licensegraph/ver/urllib3/2.8.0> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.43.123" .
+
+<http://example.org/licensegraph/ver/cffi/2.1.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT-0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/pycparser/3.12> ;
+    lg:hasLicense license:MIT-0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.1.1" .
+
+<http://example.org/licensegraph/ver/charset-normalizer/3.5.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "3.5.2" .
+
+<http://example.org/licensegraph/ver/cssselect/1.6.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.6.0" .
+
+<http://example.org/licensegraph/ver/frozenlist/1.8.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.8.0" .
+
+<http://example.org/licensegraph/ver/invoke/2.2.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "2.2.1" .
+
+<http://example.org/licensegraph/ver/itemadapter/0.14.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.14.0" .
+
+<http://example.org/licensegraph/ver/lxml/6.1.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "6.1.3" .
+
+<http://example.org/licensegraph/ver/multidict/7.2.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "7.2.1" .
+
+<http://example.org/licensegraph/ver/mypy-extensions/1.2.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.2.0" .
+
+<http://example.org/licensegraph/ver/outcome/1.3.0.post0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT OR Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/attrs/26.1.0> ;
+    lg:hasLicense license:Apache-2.0,
+        license:MIT ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "1.3.0.post0" .
+
+<http://example.org/licensegraph/ver/paramiko/5.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "LGPL-2.1" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/bcrypt/5.0.0>,
+        <http://example.org/licensegraph/ver/cryptography/50.0.2>,
+        <http://example.org/licensegraph/ver/invoke/2.2.1>,
+        <http://example.org/licensegraph/ver/invoke/3.0.3>,
+        <http://example.org/licensegraph/ver/pynacl/1.6.2> ;
+    lg:hasLicense license:LGPL-2.1 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "5.1.0" .
+
+<http://example.org/licensegraph/ver/parsel/1.12.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/cssselect/1.6.0>,
+        <http://example.org/licensegraph/ver/jmespath/1.1.0>,
+        <http://example.org/licensegraph/ver/lxml/6.1.3>,
+        <http://example.org/licensegraph/ver/w3lib/2.5.0> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "1.12.1" .
+
+<http://example.org/licensegraph/ver/propcache/0.5.4> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.5.4" .
+
+<http://example.org/licensegraph/ver/pygments/2.21.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-2-Clause" ;
+    lg:hasLicense license:BSD-2-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.21.0" .
+
+<http://example.org/licensegraph/ver/resolvelib/1.2.1> a lg:PackageVersion ;
+    lg:declaredLicenseString "ISC" ;
+    lg:hasLicense license:ISC ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.2.1" .
+
+<http://example.org/licensegraph/ver/sphinx/9.2.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-2-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/alabaster/1.0.0>,
+        <http://example.org/licensegraph/ver/babel/2.18.0>,
+        <http://example.org/licensegraph/ver/docutils/0.23>,
+        <http://example.org/licensegraph/ver/imagesize/2.0.1>,
+        <http://example.org/licensegraph/ver/jinja2/3.1.6>,
+        <http://example.org/licensegraph/ver/packaging/26.3>,
+        <http://example.org/licensegraph/ver/pygments/2.21.0>,
+        <http://example.org/licensegraph/ver/requests/2.34.2>,
+        <http://example.org/licensegraph/ver/roman-numerals/4.1.0>,
+        <http://example.org/licensegraph/ver/snowballstemmer/3.1.1>,
+        <http://example.org/licensegraph/ver/sphinxcontrib-applehelp/2.0.0>,
+        <http://example.org/licensegraph/ver/sphinxcontrib-devhelp/2.0.0>,
+        <http://example.org/licensegraph/ver/sphinxcontrib-htmlhelp/2.1.0>,
+        <http://example.org/licensegraph/ver/sphinxcontrib-jsmath/2.0.0>,
+        <http://example.org/licensegraph/ver/sphinxcontrib-qthelp/2.0.0>,
+        <http://example.org/licensegraph/ver/sphinxcontrib-serializinghtml/2.0.0> ;
+    lg:hasLicense license:BSD-2-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "9.2.0" .
+
+<http://example.org/licensegraph/ver/trio/0.35.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT OR Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/attrs/26.1.0>,
+        <http://example.org/licensegraph/ver/idna/3.20>,
+        <http://example.org/licensegraph/ver/outcome/1.3.0.post0>,
+        <http://example.org/licensegraph/ver/sniffio/1.3.1>,
+        <http://example.org/licensegraph/ver/sortedcontainers/2.4.0> ;
+    lg:hasLicense license:Apache-2.0,
+        license:MIT ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.35.0" .
+
+<http://example.org/licensegraph/ver/typing-inspection/0.4.4> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/typing-extensions/4.16.0> ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "0.4.4" .
+
+<http://example.org/licensegraph/ver/w3lib/2.5.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.5.0" .
+
+<http://example.org/licensegraph/ver/zope-interface/8.7> a lg:PackageVersion ;
+    lg:declaredLicenseString "ZPL-2.1" ;
+    lg:hasLicense license:ZPL-2.1 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "8.7" .
+
+<http://example.org/licensegraph/ver/h11/0.16.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "0.16.0" .
+
+<http://example.org/licensegraph/ver/markupsafe/3.0.4> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.0.4" .
+
+<http://example.org/licensegraph/ver/python-dateutil/4.0.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/tzdata/2026.6> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.0.0" .
+
+<http://example.org/licensegraph/ver/vine/5.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "5.1.0" .
+
+license:PSF-2.0 a lg:PermissiveLicense ;
+    rdfs:label "Python Software Foundation License 2.0" ;
+    lg:isOsiApproved false ;
+    lg:spdxId "PSF-2.0" .
+
+<http://example.org/licensegraph/ver/certifi/2026.10.23> a lg:PackageVersion ;
+    lg:declaredLicenseString "MPL-2.0" ;
+    lg:hasLicense license:MPL-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "2026.10.23" .
+
+<http://example.org/licensegraph/ver/jinja2/3.1.6> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/markupsafe/3.0.4> ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "classifier" ;
+    lg:versionString "3.1.6" .
+
+<http://example.org/licensegraph/ver/jmespath/1.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "1.1.0" .
+
+<http://example.org/licensegraph/ver/platformdirs/4.14.4> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.14.4" .
+
+<http://example.org/licensegraph/ver/pyyaml/6.0.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "6.0.3" .
+
+<http://example.org/licensegraph/ver/urllib3/2.8.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.8.0" .
+
+<http://example.org/licensegraph/ver/attrs/26.1.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "MIT" ;
+    lg:hasLicense license:MIT ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "26.1.0" .
+
+license:GPL-2.0-or-later a lg:StrongCopyleftLicense ;
+    rdfs:label "GNU General Public License v2.0 or later" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "GPL-2.0-or-later" .
+
+<http://example.org/licensegraph/ver/cryptography/50.0.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0 OR BSD-3-Clause" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/cffi/2.1.1> ;
+    lg:hasLicense license:Apache-2.0,
+        license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "50.0.2" .
+
+license:BSD-2-Clause a lg:PermissiveLicense ;
+    rdfs:label "BSD 2-Clause \"Simplified\" License" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "BSD-2-Clause" .
+
+<http://example.org/licensegraph/ver/click/8.5.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "8.5.0" .
+
+<http://example.org/licensegraph/ver/idna/3.20> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause" ;
+    lg:hasLicense license:BSD-3-Clause ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "3.20" .
+
+<http://example.org/licensegraph/ver/numpy/2.5.4> a lg:PackageVersion ;
+    lg:declaredLicenseString "BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0" ;
+    lg:hasLicense license:0BSD,
+        license:BSD-3-Clause,
+        license:CC0-1.0,
+        license:MIT,
+        license:Zlib ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "2.5.4" .
+
+<http://example.org/licensegraph/ver/requests/2.34.2> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0" ;
+    lg:directlyDependsOn <http://example.org/licensegraph/ver/certifi/2026.10.23>,
+        <http://example.org/licensegraph/ver/charset-normalizer/3.5.2>,
+        <http://example.org/licensegraph/ver/idna/3.20>,
+        <http://example.org/licensegraph/ver/urllib3/2.8.0> ;
+    lg:hasLicense license:Apache-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot true ;
+    lg:licenseSource "license_text" ;
+    lg:versionString "2.34.2" .
+
+<http://example.org/licensegraph/ver/packaging/26.3> a lg:PackageVersion ;
+    lg:declaredLicenseString "Apache-2.0 OR BSD-2-Clause" ;
+    lg:hasLicense license:Apache-2.0,
+        license:BSD-2-Clause ;
+    lg:hasMultipleDeclaredLicenses true ;
+    lg:isDisjunctiveLicense true ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "26.3" .
+
+<http://example.org/licensegraph/ver/typing-extensions/4.16.0> a lg:PackageVersion ;
+    lg:declaredLicenseString "PSF-2.0" ;
+    lg:hasLicense license:PSF-2.0 ;
+    lg:hasMultipleDeclaredLicenses false ;
+    lg:isDisjunctiveLicense false ;
+    lg:isSeedRoot false ;
+    lg:licenseSource "license_expression" ;
+    lg:versionString "4.16.0" .
+
+license:Apache-2.0 a lg:PermissiveLicense ;
+    rdfs:label "Apache License 2.0" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "Apache-2.0" .
+
+license:BSD-3-Clause a lg:PermissiveLicense ;
+    rdfs:label "BSD 3-Clause \"New\" or \"Revised\" License" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "BSD-3-Clause" .
+
+license:MIT a lg:PermissiveLicense ;
+    rdfs:label "MIT License" ;
+    lg:isFsfLibre true ;
+    lg:isOsiApproved true ;
+    lg:spdxId "MIT" .
+
