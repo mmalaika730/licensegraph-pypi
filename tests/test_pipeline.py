@@ -65,5 +65,5 @@ def test_no_secrets_in_repo():
     rx = re.compile(r"sk-[A-Za-z0-9_-]{20,}|AIza[0-9A-Za-z_-]{30,}|gsk_[A-Za-z0-9]{20,}|Bearer [A-Za-z0-9._-]{20,}")
     assert not (ROOT / ".env").exists() or ".env" in (ROOT / ".gitignore").read_text(encoding="utf-8")
     for p in ROOT.rglob("*"):
-        if p.is_file() and p.suffix in {".py", ".md", ".txt", ".json", ".example", ".toml", ".ttl", ".csv"} and ".git" not in p.parts:
+        if p.is_file() and p.suffix in {".py", ".md", ".txt", ".json", ".example", ".toml", ".ttl", ".csv"} and not ({".git", ".venv", "venv", "__pycache__", "node_modules"} & set(p.parts)):
             assert not rx.search(p.read_text(encoding="utf-8", errors="ignore")), p
