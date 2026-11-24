@@ -1,0 +1,5 @@
+project,license,depends_on
+acme-mit-app,MIT,flask;beets;pytest-pylint;requests
+acme-proprietary-app,LicenseRef-Proprietary,requests;paramiko;psycopg2-binary;scrapy
+acme-apache-app,Apache-2.0,sphinx;fabric;ldap3;pandas;python-slugify
+acme-gpl3-app,GPL-3.0-only,requests;sphinx;ansible-core

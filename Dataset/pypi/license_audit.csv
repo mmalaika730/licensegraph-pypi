@@ -1,0 +1,180 @@
+name,version,licenses,license_source,note,raw_license_field,raw_classifiers
+aiohappyeyeballs,2.7.1,PSF-2.0,license_text,mapped from 'PSF-2.0',PSF-2.0,OSI Approved :: Python Software Foundation License
+aiohttp,3.14.5,Apache-2.0 AND MIT,license_expression,,,
+aiosignal,1.4.0,Apache-2.0,license_text,mapped from 'Apache 2.0',Apache 2.0,OSI Approved :: Apache Software License
+alabaster,1.0.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+altgraph,0.17.5,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+amqp,5.4.2,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,BSD,OSI Approved :: BSD License
+annotated-doc,0.0.5,MIT,license_expression,,,
+annotated-types,0.8.0,MIT,license_expression,,,OSI Approved :: MIT License
+ansible,14.5.0,GPL-3.0-or-later,license_text,mapped from 'GPL-3.0-or-later',GPL-3.0-or-later,
+ansible-core,2.21.6,GPL-3.0-or-later,license_expression,,,
+ansible-core,2.22.0,GPL-3.0-or-later,license_expression,,,
+anyio,4.16.0,MIT,license_expression,,,
+asgiref,3.13.0,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,
+astroid,4.3.4,LGPL-2.1-or-later,license_expression,,,
+attrs,26.1.0,MIT,license_expression,,,
+automat,25.4.16,MIT,classifier,classifier 'MIT License',"Copyright (c) 2014 Rackspace  Permission is hereby granted, free of charge, to any person obtaining a copy of this softw",OSI Approved :: MIT License
+babel,2.18.0,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,OSI Approved :: BSD License
+backports-zstd,1.8.0,PSF-2.0,license_expression,,,
+bcrypt,5.0.0,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,OSI Approved :: Apache Software License
+beautifulsoup4,4.15.0,MIT,license_text,mapped from 'MIT License',MIT License,OSI Approved :: MIT License
+beets,2.14.1,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+billiard,4.3.2,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,BSD,OSI Approved :: BSD License
+black,26.10.1,MIT,license_expression,,,
+blinker,1.9.0,MIT,classifier,classifier 'MIT License',,OSI Approved :: MIT License
+boto3,1.43.123,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,
+botocore,1.43.123,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,
+brotli,1.2.1,MIT,license_text,mapped from 'MIT',MIT,
+celery,5.6.3,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,
+certifi,2026.10.23,MPL-2.0,license_text,mapped from 'MPL-2.0',MPL-2.0,OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+cffi,2.1.1,MIT-0,license_expression,,,
+charset-normalizer,3.5.2,MIT,license_text,mapped from 'MIT',MIT,
+click,8.5.0,BSD-3-Clause,license_expression,,,
+click-didyoumean,0.3.1,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+click-plugins,1.1.1.2,BSD-3-Clause,license_text,mapped from 'New BSD',New BSD,OSI Approved :: BSD License
+click-repl,0.4.1,MIT,license_text,mapped from 'MIT',MIT,
+cloudpickle,3.1.2,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,OSI Approved :: BSD License
+confuse,2.3.1,MIT,license_expression,,,OSI Approved :: MIT License
+constantly,23.10.4,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+contourpy,1.4.0,BSD-3-Clause,license_expression,,,
+cryptography,50.0.2,Apache-2.0 OR BSD-3-Clause,license_expression,,,
+cssselect,1.6.0,BSD-3-Clause,license_expression,,,
+cycler,0.12.1,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,"Copyright (c) 2015, matplotlib project All rights reserved.  Redistribution and use in source and binary forms, with or ",OSI Approved :: BSD License
+decorator,5.3.1,BSD-2-Clause,license_text,mapped from 'BSD-2-Clause',BSD-2-Clause,
+defusedxml,0.7.1,PSF-2.0,classifier,classifier 'Python Software Foundation License',PSFL,OSI Approved :: Python Software Foundation License
+deprecated,3.0.1,MIT,license_expression,,,
+dill,0.4.1,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,OSI Approved :: BSD License
+django,6.1.3,BSD-3-Clause,license_expression,,,
+docker,7.2.0,Apache-2.0,license_expression,,,OSI Approved :: Apache Software License
+docutils,0.23,LicenseRef-Public-Domain OR BSD-3-Clause OR GPL-2.0-or-later,classifier,classifier 'Public Domain'; ambiguous: BSD 2- or 3-clause; ambiguous version,,Public Domain | OSI Approved :: BSD License | OSI Approved :: GNU General Public License (GPL)
+et-xmlfile,2.0.0,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+fabric,3.2.3,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,BSD,OSI Approved :: BSD License
+fastapi,0.162.0,MIT,license_expression,,,
+filelock,4.2.8,MIT,license_expression,,,
+filetype,1.2.0,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+flask,3.1.3,BSD-3-Clause,license_expression,,,
+fonttools,4.68.0,MIT,license_text,mapped from 'MIT',MIT,
+frozenlist,1.8.0,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,
+h11,0.16.0,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+httpcore,1.0.9,BSD-3-Clause,license_expression,,,OSI Approved :: BSD License
+httpx,0.28.1,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,OSI Approved :: BSD License
+hyperlink,21.0.0,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+idna,3.20,BSD-3-Clause,license_expression,,,
+imagesize,2.0.1,MIT,license_expression,,,
+incremental,24.11.0,MIT,classifier,classifier 'MIT License',,OSI Approved :: MIT License
+iniconfig,2.3.1,MIT,license_expression,,,
+invoke,2.2.1,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,BSD,OSI Approved :: BSD License
+invoke,3.0.3,BSD-2-Clause,license_expression,,,
+isort,9.0.2,MIT,license_expression,,,OSI Approved :: MIT License
+itemadapter,0.14.0,BSD-3-Clause,license_expression,,,
+itemloaders,1.5.0,BSD-3-Clause,license_expression,,,
+itsdangerous,2.2.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+jellyfish,1.3.0,MIT,classifier,classifier 'MIT License',,OSI Approved :: MIT License
+jinja2,3.1.6,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+jmespath,1.1.0,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+joblib,1.6.0,BSD-3-Clause,license_expression,,,
+kiwisolver,1.5.1,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,=========================  The Kiwi licensing terms ========================= Kiwi is licensed under the terms of the Mo,OSI Approved :: BSD License
+kombu,5.7.0,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,
+lap,0.5.14,BSD-2-Clause,license_text,mapped from 'BSD-2-Clause',BSD-2-Clause,
+ldap3,2.9.1,LGPL-3.0-only,classifier,classifier 'GNU Lesser General Public License v3 (LGPLv3)',LGPL v3,OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+lxml,6.1.3,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,
+markupsafe,3.0.4,BSD-3-Clause,license_expression,,,
+matplotlib,3.11.2,PSF-2.0,classifier,classifier 'Python Software Foundation License',License agreement for matplotlib versions 1.3.0 and later  =========================================================   1,OSI Approved :: Python Software Foundation License
+mccabe,0.7.0,MIT,classifier,classifier 'MIT License',Expat license,OSI Approved :: MIT License
+mediafile,0.17.0,MIT,license_expression,,,
+multidict,7.2.1,Apache-2.0,license_expression,,,
+mutagen,1.48.1,GPL-2.0-or-later,license_expression,,,
+mypy-extensions,1.2.0,MIT,license_expression,,,
+mysql-connector-python,26.10.0,GPL-2.0-or-later,classifier,ambiguous version,GNU GPLv2 (with FOSS License Exception),OSI Approved :: GNU General Public License (GPL)
+narwhals,2.28.0,MIT,license_expression,,,
+numpy,2.5.4,BSD-3-Clause AND 0BSD AND MIT AND Zlib AND CC0-1.0,license_expression,,,
+openpyxl,3.1.5,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+opentelemetry-api,1.45.2,Apache-2.0,license_expression,,,
+outcome,1.3.0.post0,MIT OR Apache-2.0,classifier,classifier 'MIT License'; assumed version 2.0,MIT OR Apache-2.0,OSI Approved :: MIT License | OSI Approved :: Apache Software License
+packaging,26.3,Apache-2.0 OR BSD-2-Clause,license_expression,,,
+pandas,3.1.0,BSD-3-Clause,license_expression,,,
+paramiko,5.1.0,LGPL-2.1,license_expression,,,
+parsel,1.12.1,BSD-3-Clause,license_expression,,,OSI Approved :: BSD License
+pathspec,1.1.1,MPL-2.0,classifier,classifier 'Mozilla Public License 2.0 (MPL 2.0)',,OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+pillow,13.0.0,MIT-CMU,license_expression,,,
+platformdirs,4.14.4,MIT,license_expression,,,
+pluggy,1.7.0,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+prompt-toolkit,3.0.53,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+propcache,0.5.4,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,
+protego,0.7.0,BSD-3-Clause,license_expression,,,
+psycopg,3.3.8,LGPL-3.0-only,license_expression,,,
+psycopg2-binary,2.9.13,LGPL-2.1-or-later,classifier,ambiguous version,LGPL with exceptions,OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+pyasn1,0.6.5,BSD-2-Clause,license_text,mapped from 'BSD-2-Clause',BSD-2-Clause,
+pycparser,3.12,BSD-3-Clause,license_expression,,,
+pydantic,2.14.2,MIT,license_expression,,,
+pydantic-core,2.50.2,MIT,license_expression,,,
+pydispatcher,2.0.7,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,BSD,OSI Approved :: BSD License
+pygments,2.21.0,BSD-2-Clause,license_expression,,,
+pyinstaller,6.22.3,GPL-2.0-or-later WITH Bootloader-exception,manual_override,license text: 'GPLv2-or-later with a special exception'; the classifier says GPLv2 only,GPLv2-or-later with a special exception which allows to use PyInstaller to build and distribute non-free programs (inclu,OSI Approved :: GNU General Public License v2 (GPLv2)
+pyinstaller-hooks-contrib,2026.9,Apache-2.0 OR GPL-2.0-only,classifier,assumed version 2.0; classifier 'GNU General Public License v2 (GPLv2)',,OSI Approved :: Apache Software License | OSI Approved :: GNU General Public License v2 (GPLv2)
+pylint,4.1.3,GPL-2.0-or-later,license_expression,,,
+pynacl,1.6.2,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,OSI Approved :: Apache Software License
+pyopenssl,26.4.0,Apache-2.0,license_text,"mapped from 'Apache License, Version 2.0'","Apache License, Version 2.0",OSI Approved :: Apache Software License
+pyparsing,3.3.3,MIT,license_expression,,,
+pyrate-limiter,4.5.1,MIT,license_expression,,,
+pysocks,1.7.1,BSD-3-Clause,manual_override,license field is just 'BSD' and there is no classifier; 3-clause assumed,BSD,
+pytest,9.2.0,MIT,license_expression,,,
+pytest-pylint,0.21.0,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+python-dateutil,2.9.0.post0,BSD-3-Clause OR Apache-2.0,classifier,ambiguous: BSD 2- or 3-clause; assumed version 2.0,Dual License,OSI Approved :: BSD License | OSI Approved :: Apache Software License
+python-dateutil,4.0.0,BSD-3-Clause,license_expression,,,
+python-slugify,9.1.3,MIT,license_expression,,,
+pytokens,0.4.1,MIT,classifier,classifier 'MIT License',"MIT License  Copyright (c) 2024 Tushar Sadhwani  Permission is hereby granted, free of charge, to any person obtaining a",OSI Approved :: MIT License
+pyyaml,6.0.3,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+queuelib,1.10.0,BSD-3-Clause,license_expression,,,
+redis,8.1.0,MIT,license_expression,,,OSI Approved :: MIT License
+requests,2.34.2,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,OSI Approved :: Apache Software License
+requests-file,3.0.1,Apache-2.0,license_text,mapped from 'Apache 2.0',Apache 2.0,OSI Approved :: Apache Software License
+requests-ratelimiter,0.10.0,MIT,license_expression,,,
+resolvelib,1.2.1,ISC,license_text,mapped from 'ISC License',ISC License,OSI Approved :: ISC License (ISCL)
+roman-numerals,4.1.0,0BSD OR CC0-1.0,license_expression,,,
+s3transfer,0.19.3,Apache-2.0,classifier,assumed version 2.0,Apache License 2.0,OSI Approved :: Apache Software License
+scikit-learn,1.9.1,BSD-3-Clause,license_expression,,,
+scipy,1.18.1,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,"Copyright (c) 2001-2002 Enthought, Inc. 2003, SciPy Developers.  All rights reserved.   Redistribution and use in source",OSI Approved :: BSD License
+scrapy,2.19.0,BSD-3-Clause,license_expression,,,
+selenium,4.52.0,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,
+service-identity,26.1.0,MIT,license_expression,,,OSI Approved :: MIT License
+setuptools,84.2.1,MIT,license_expression,,,
+six,1.17.0,MIT,license_text,mapped from 'MIT',MIT,OSI Approved :: MIT License
+sniffio,1.3.1,MIT OR Apache-2.0,classifier,classifier 'MIT License'; assumed version 2.0,MIT OR Apache-2.0,OSI Approved :: MIT License | OSI Approved :: Apache Software License
+snowballstemmer,3.1.1,BSD-3-Clause,license_text,mapped from 'BSD-3-Clause',BSD-3-Clause,
+sortedcontainers,2.4.0,Apache-2.0,license_text,mapped from 'Apache 2.0',Apache 2.0,OSI Approved :: Apache Software License
+soupsieve,4.0,MIT,license_expression,,,OSI Approved :: MIT License
+sphinx,9.2.0,BSD-2-Clause,license_expression,,,
+sphinxcontrib-applehelp,2.0.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+sphinxcontrib-devhelp,2.0.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+sphinxcontrib-htmlhelp,2.1.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+sphinxcontrib-jsmath,2.0.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+sphinxcontrib-qthelp,2.0.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+sphinxcontrib-serializinghtml,2.0.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+sqlalchemy,2.1.8,MIT,license_expression,,,
+sqlparse,0.6.1,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,,OSI Approved :: BSD License
+starlette,1.10.0,BSD-3-Clause,license_expression,,,
+text-unidecode,1.3,Artistic-2.0 OR GPL-2.0-or-later,classifier,ambiguous: Artistic 1.0 or 2.0; ambiguous version,Artistic License,OSI Approved :: Artistic License | OSI Approved :: GNU General Public License (GPL) | OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+threadpoolctl,3.7.0,BSD-3-Clause,license_expression,,,
+tldextract,5.4.0,BSD-3-Clause,license_expression,,,
+tomlkit,0.15.2,MIT,license_expression,,,
+trio,0.35.0,MIT OR Apache-2.0,license_expression,,,
+trio-websocket,0.12.2,MIT,classifier,classifier 'MIT License',,OSI Approved :: MIT License
+twisted,26.10.0,MIT,license_expression,,,
+typing-extensions,4.16.0,PSF-2.0,license_expression,,,
+typing-inspection,0.4.4,MIT,license_expression,,,
+tzdata,2026.6,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,
+tzlocal,5.4.5,MIT,license_expression,,,
+unidecode,1.4.0,GPL-2.0-or-later,classifier,classifier 'GNU General Public License v2 or later (GPLv2+)',GPL,OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+urllib3,2.8.0,MIT,license_expression,,,
+uvicorn,0.54.0,BSD-3-Clause,license_expression,,,
+vine,5.1.0,BSD-3-Clause,classifier,ambiguous: BSD 2- or 3-clause,BSD,OSI Approved :: BSD License
+w3lib,2.5.0,BSD-3-Clause,license_expression,,,
+wcwidth,0.9.4,MIT,classifier,classifier 'MIT License',,OSI Approved :: MIT License
+websocket-client,1.9.2,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,
+werkzeug,3.1.9,BSD-3-Clause,license_expression,,,
+wrapt,2.5.2,BSD-2-Clause,license_expression,,,
+wsproto,1.3.2,MIT,license_expression,,,
+yarl,1.25.1,Apache-2.0,license_text,mapped from 'Apache-2.0',Apache-2.0,
+zope-interface,8.7,ZPL-2.1,license_expression,,,

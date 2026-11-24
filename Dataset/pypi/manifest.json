@@ -1,0 +1,19 @@
+{
+  "fetched_at_utc": "2026-11-04T12:57:55+00:00",
+  "python": "3.13.18",
+  "platform": "Linux-6.18.44-fc-v233-x86_64-with-glibc2.39",
+  "pip": "pip 26.2.1 from /usr/local/lib/python3.13/site-packages/pip (python 3.13)",
+  "seeds_requested": 45,
+  "seeds_resolved": 45,
+  "seeds_failed": [],
+  "nodes": 179,
+  "edges": 247,
+  "seed_nodes": 45,
+  "license_source_counts": {
+    "license_text": 51,
+    "license_expression": 84,
+    "classifier": 42,
+    "manual_override": 2
+  },
+  "ambiguous_edges_all_versions_linked": []
+}

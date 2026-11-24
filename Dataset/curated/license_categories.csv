@@ -1,0 +1,62 @@
+spdx_id,category,note
+MIT,Permissive,
+MIT-0,Permissive,
+Apache-2.0,Permissive,
+BSD-2-Clause,Permissive,
+BSD-3-Clause,Permissive,
+BSD-3-Clause-Clear,Permissive,
+BSD-4-Clause,Permissive,"judgment call: advertising clause"
+ISC,Permissive,
+Zlib,Permissive,
+PSF-2.0,Permissive,
+Python-2.0,Permissive,
+0BSD,Permissive,
+BlueOak-1.0.0,Permissive,
+HPND,Permissive,
+X11,Permissive,
+NCSA,Permissive,
+BSL-1.0,Permissive,
+Artistic-2.0,Permissive,"judgment call: permissive-leaning, has conditions on modified versions"
+WTFPL,Permissive,
+Unicode-DFS-2016,Permissive,
+curl,Permissive,
+OpenSSL,Permissive,"judgment call: advertising clause"
+MIT-CMU,Permissive,
+Apache-1.1,Permissive,
+AFL-3.0,Permissive,
+Unlicense,PublicDomain,
+CC0-1.0,PublicDomain,
+LGPL-2.0-only,WeakCopyleft,"library-level copyleft"
+LGPL-2.0-or-later,WeakCopyleft,
+LGPL-2.1-only,WeakCopyleft,
+LGPL-2.1-or-later,WeakCopyleft,
+LGPL-3.0-only,WeakCopyleft,
+LGPL-3.0-or-later,WeakCopyleft,
+LGPL-2.0,WeakCopyleft,"deprecated SPDX id"
+LGPL-2.0+,WeakCopyleft,"deprecated SPDX id"
+LGPL-2.1,WeakCopyleft,"deprecated SPDX id"
+LGPL-2.1+,WeakCopyleft,"deprecated SPDX id"
+LGPL-3.0,WeakCopyleft,"deprecated SPDX id"
+LGPL-3.0+,WeakCopyleft,"deprecated SPDX id"
+MPL-1.1,WeakCopyleft,"file-level copyleft"
+MPL-2.0,WeakCopyleft,"file-level copyleft"
+EPL-1.0,WeakCopyleft,"module-level copyleft"
+EPL-2.0,WeakCopyleft,"module-level copyleft"
+CDDL-1.0,WeakCopyleft,"file-level copyleft"
+CDDL-1.1,WeakCopyleft,"file-level copyleft"
+GPL-2.0-only,StrongCopyleft,
+GPL-2.0-or-later,StrongCopyleft,
+GPL-3.0-only,StrongCopyleft,
+GPL-3.0-or-later,StrongCopyleft,
+GPL-2.0,StrongCopyleft,"deprecated SPDX id"
+GPL-2.0+,StrongCopyleft,"deprecated SPDX id"
+GPL-3.0,StrongCopyleft,"deprecated SPDX id"
+GPL-3.0+,StrongCopyleft,"deprecated SPDX id"
+AGPL-3.0-only,NetworkCopyleft,"network use triggers source obligations"
+AGPL-3.0-or-later,NetworkCopyleft,
+AGPL-3.0,NetworkCopyleft,"deprecated SPDX id"
+LicenseRef-Proprietary,Proprietary,"used for a user's own proprietary project"
+NOASSERTION,Unknown,"no license recorded by deps.dev"
+non-standard,Unknown,"deps.dev value for a license that is not an SPDX id"
+LicenseRef-Public-Domain,PublicDomain,"declared as public domain"
+ZPL-2.1,Permissive,"Zope Public License, BSD-style"
