@@ -1,0 +1,14 @@
+flowchart LR
+  Q["User question"] --> R["Router<br/>entity linking + intent<br/>(kg_qa/router.py)"]
+  R -- "no intent or entity not in graph" --> X["Insufficient evidence<br/>(LLM not called)"]
+  R -- "intent + entities" --> T["Retrieval templates<br/>SPARQL / graph traversal<br/>(kg_qa/retrievers.py)"]
+  KG[("Knowledge graph<br/>explicit triples")] --> T
+  RS[("OWL 2 RL closure +<br/>conflict rule<br/>= inferred triples")] --> T
+  PR[("TransE predictions<br/>(separate, labelled)")] --> T
+  T --> F["Numbered facts F1..Fn<br/>explicit / inferred / prediction<br/>+ provenance"]
+  F --> P["Prompt<br/>(prompts/grounded_*.txt)"]
+  P --> L["LLM<br/>(any OpenAI-compatible endpoint)"]
+  L --> A["Answer with fact citations"]
+  A --> C["Citation check"]
+  C --> O["Answer + evidence panel"]
+  F --> O
