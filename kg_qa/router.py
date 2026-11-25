@@ -139,7 +139,7 @@ INTENT_RULES = [  # (intent, regex over the lower-cased question), first match w
     ("non_osi", r"\bosi\b|not approved|unapproved|non-standard|non standard|\bunknown licen|\bunrecognis"),
     ("direct_deps", r"direct(?:ly)? dependenc|\bdepend\w*\b.*\bdirect(?:ly)?\b|\bdirect(?:ly)?\b.*\bdepend|\bdirect\b"),
     ("dependency_chains", r"\bchain|\bpath\b|\bhow does\b.*\b(?:depend|reach|end up|get)|\bthrough which|\bvia which|\bintroduc"),
-    ("dependents", r"\bwho (?:depends|uses|relies)\b|\bwhich (?:projects?|packages?|versions?)(?: and (?:projects?|packages?))? (?:that )?(?:depend|rely|use)\w*\b|\bexposed\b|\bdependents?\b|\breach(?:es|ed)? "),
+    ("dependents", r"\bwho (?:depends|uses|relies)\b|\bwhich (?:projects?|packages?|versions?)(?: and (?:projects?|packages?))? (?:that )?(?:depend|rely|use)\w*\b|\bexposed\b|\bdependents?\b|\breach(?:es|ed)? |\bpulls? in\b|\baffected by\b"),
     ("tree_size", r"how many (?:transitive|indirect|total|packages|dependencies)|\bsize of\b|how large|how big|tree size|number of (?:transitive|indirect|total)"),
     ("copyleft_chains", r"copyleft|\bgpl\b|\bgplv|\blgpl\b|\bagpl\b|\bmpl\b"),
     ("tree_licenses", r"licen\w+.*\b(?:tree|anywhere|below|transitive|indirect|all)\b|\b(?:tree|transitive|indirect)\b.*licen"),

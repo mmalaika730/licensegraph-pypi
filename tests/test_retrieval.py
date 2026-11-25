@@ -57,3 +57,8 @@ def test_license_pair_uses_symmetric_inference(qa):
 def test_all_eval_questions_route(kg):
     for q in json.loads((ROOT / "evaluation/cq_questions.json").read_text(encoding="utf-8")):
         assert route(kg, q["question"]).status == "ok", q["question"]
+
+
+def test_pulls_in_and_affected_by_route_to_dependents(kg):
+    for q in ["Which package pulls in mutagen?", "Which projects are affected by mutagen?"]:
+        assert route(kg, q).intent == "dependents"
