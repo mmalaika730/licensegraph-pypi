@@ -14,5 +14,10 @@
  "Why is mutagen flagged for acme-mit-app?",
  "Which of my dependencies use the AGPL?",
  "What does flask depend on directly?",
- "How many packages are in the graph?"
+ "How many packages are in the graph?",
+ "What licenses do the direct dependencies of flask use?",
+ "Who depends on urllib3?",
+ "How does acme-mit-app depend on mediafile?",
+ "Which license does aiohttp use?",
+ "Does the package fastjson-pro have license conflicts?"
 ]
