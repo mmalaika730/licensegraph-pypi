@@ -1,0 +1,18 @@
+# Q15 (Iteration 2) | Compare the link-prediction output (rank-1 guess for each hidden link) with the stored, verified licenses.
+# Needs kg_reasoning/predictions.ttl loaded into the named graph <http://example.org/licensegraph/predictions>.
+# Predictions live in their own graph and use lg:predictedLicense, never lg:hasLicense, so they cannot be mistaken for facts
+# and the conflict rule never reads them. A version with two licenses appears once; "agrees" = the guess is one of its stored licenses.
+PREFIX lg: <http://example.org/licensegraph#>
+SELECT ?packageVersion ?predictedLicense (GROUP_CONCAT(DISTINCT ?storedId; separator=", ") AS ?storedLicenses) ?agrees
+WHERE {
+  GRAPH <http://example.org/licensegraph/predictions> {
+    ?p a lg:LicensePrediction ; lg:predictionFor ?pv ; lg:predictedLicense ?pl ; lg:predictionRank 1 ; lg:heldOutLink true .
+  }
+  ?pl lg:spdxId ?predictedLicense .
+  ?pv lg:hasLicense ?sl .
+  ?sl lg:spdxId ?storedId .
+  BIND(STRAFTER(STR(?pv), "/ver/") AS ?packageVersion)
+  BIND(IF(EXISTS { ?pv lg:hasLicense ?pl }, "yes", "no") AS ?agrees)
+}
+GROUP BY ?packageVersion ?predictedLicense ?agrees
+ORDER BY ?agrees ?packageVersion
