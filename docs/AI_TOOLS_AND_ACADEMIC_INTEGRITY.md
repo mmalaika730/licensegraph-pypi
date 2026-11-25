@@ -1,0 +1,9 @@
+# Use of AI tools and academic integrity
+
+* **AI assistance.** An AI assistant (Claude, by Anthropic) was used as a coding and learning aid in both iterations: it drafted scripts, SPARQL queries, documents and the first version of the code, and it helped check the cited compatibility rules against their source pages. The team read the papers and documentation listed in `docs/references.md`, ran every component on their own machines, and each member prepared to explain the component assigned to them in `CONTRIBUTIONS.md`. Commits in this repository were made by each member from their own GitHub account.
+* **LLM used by the application and the evaluation.** The model, endpoint and date of each evaluation run are recorded in `results_iter2/evaluation/raw_answers.json`. The prompts are in `prompts/`.
+* **No hard-coded answers.** Answers are produced at run time from graph queries and the LLM. The only constants are the expected answers used to *grade* the evaluation (`evaluation/cq_questions.json`), taken from the Iteration 1 SPARQL results, not from the application's own retrieval code.
+* **Test stub.** `tests/test_pipeline.py` contains a stub LLM that exists only to test the program's plumbing. It is never used in the reported results.
+* **No credentials.** API keys live only in the git-ignored `.env`. `tests/test_pipeline.py` fails if something that looks like a key is committed.
+* **External resources.** Papers and documentation are listed in `docs/references.md`; data sources (PyPI, SPDX License List) and the sources of the compatibility rules are listed in `Dataset/`.
+* **Limits of the evidence.** 18 of 27 compatibility rules are the team's own design decisions; the cited rules were checked against their source pages on 2026-11-14 (`Dataset/curated/rule_verification.csv`). The link-prediction model does not clearly beat simple baselines (see `docs/method_link_prediction.md`).
