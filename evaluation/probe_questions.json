@@ -1,0 +1,18 @@
+[
+ "Which license does django use?",
+ "What licenses do the direct dependencies of acme-proprietary-app use?",
+ "Can an Apache-2.0 project depend on a GPL-2.0-only package?",
+ "Is MIT compatible with GPL-3.0-or-later?",
+ "Who depends on certifi?",
+ "How does acme-gpl3-app depend on docutils?",
+ "What is the most common license in the graph?",
+ "Predict the license of flask",
+ "What is the capital of France?",
+ "Does the package nonexistent-lib have license conflicts?",
+ "Will my company get sued if I ship acme-mit-app?",
+ "Which license will django 6.0 use?",
+ "Why is mutagen flagged for acme-mit-app?",
+ "Which of my dependencies use the AGPL?",
+ "What does flask depend on directly?",
+ "How many packages are in the graph?"
+]
