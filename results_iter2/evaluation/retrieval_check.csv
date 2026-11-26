@@ -1,0 +1,11 @@
+id,cq,intent,facts,retrieved_context_contains_expected_terms
+1,CQ1,direct_deps,4,True
+2,CQ3,copyleft_chains,12,True
+3,CQ15,dependency_chains,2,True
+4,CQ4,dependents,3,True
+5,CQ7,deep_copyleft,2,True
+6,CQ13,tree_size,1,True
+7,CQ5,non_osi,5,True
+8,CQ8,compatibility,6,True
+9,CQ10,conflicts,11,True
+10,CQ11,firm_vs_avoidable,6,True
